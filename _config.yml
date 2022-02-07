@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Aphcity's Blog
 subtitle: ""
 description: ""
 keywords:
@@ -103,5 +103,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Aphcity/aphcity.github.io.git
+  repo: git@github.com:Aphcity/aphcity.github.io.git
   branch: gh-pages
