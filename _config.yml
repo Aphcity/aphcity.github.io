@@ -4,16 +4,16 @@
 
 # Site
 title: Aphcity's Blog
-subtitle: ""
-description: ""
+subtitle: "That's how we call it"
+description: "Just a student busy on studying"
 keywords:
-author: John Doe
-language: en
+author: Aphcity
+language: zh-CN
 timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://aphcity.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,5 +103,21 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
+  # repo: https://github.com/Aphcity/aphcity.github.io
   repo: git@github.com:Aphcity/aphcity.github.io.git
   branch: gh-pages
+
+#algolia search
+algolia:
+  applicationID: "YXAWAAF0PP"
+  apiKey: "1b5214708e38cd5e2c64e072d1cd33d8"
+  adminApiKey: "404fc0c6c136ea5964ffbff6ff10c7d4"
+  indexName: "hexo_blog"
+  chunkSize: 5000
+
+markdown:
+  plugins:
+    - plugin:
+      name: "@neilsustc/markdown-it-katex"
+      options:
+        strict: false

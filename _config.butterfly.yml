@@ -12,44 +12,65 @@ menu:
   #   Movie: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_height_limit: 200 # unit: px
 code_word_wrap: false
 
 # copy settings
-# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)https://butterfly.js.org/posts/4aa8abbe/#%E8%A4%87%E8%A3%BD%E7%9B%B8%E9%97%9C%E9%85%8D%E7%BD%AE
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  # fab fa-github: https://github.com/Aphcity || Github
+  # fas fa-envelope: mailto:chalk.talisman@gmail.com || Email
+  # iconfont icon-bilibili-fill card_icon: https://space.bilibili.com/5175685 || Bilibili
+  # icon-bilibili-fill,2: https://space.bilibili.com/5175685 || Bilibili
+  Leetcode: https://leetcode-cn.com/u/aphcity/ || icon-leetcode || faa-tada
+  Email: mailto:chalk.talisman@gmail.com || icon-Gmail || faa-tada
+  QQ: tencent://message/?uin=1194634080&Site=&Menu=yes || icon-QQ || faa-tada
+  Bilibili: https://space.bilibili.com/5175685 || icon-bilibili-fill || faa-tada
+  Cloudmusic: https://music.163.com/#/user/home?id=340182134 || icon-netease-cloud-music-line || faa-tada
 
 # search (搜索)
 # --------------------------------------
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
-local_search:
-  enable: false
+# local_search:
+#   enable: false
 
 # Math (數學)
 # --------------------------------------
@@ -59,13 +80,13 @@ local_search:
 # (false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true)
 
 # MathJax
-mathjax:
-  enable: false
-  per_page: false
+# mathjax:
+#   enable: false
+#   per_page: false
 
 # KaTeX
 katex:
-  enable: false
+  enable: true
   per_page: false
   hide_scrollbar: true
 
@@ -73,21 +94,21 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: https://s2.loli.net/2022/02/08/frHwhcxOoXTUqk5.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://s2.loli.net/2022/02/08/cXevQ1bPDzKG3lj.gif
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: https://w.wallhaven.cc/full/4g/wallhaven-4gjl67.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://w.wallhaven.cc/full/4g/wallhaven-4gjl67.jpg
 
 # The banner image of archive page
 archive_img:
@@ -120,7 +141,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://w.wallhaven.cc/full/lm/wallhaven-lm1o7p.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -620,11 +641,11 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: Follow Me On GitHub
+      link: https://github.com/Aphcity
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 耽误太多时间，事情可就做不完了。劳逸结合是不错，但也别放松过头。无论是冒险还是做生意，机会都稍纵即逝。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -663,8 +684,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 12/29/2021 16:53:47
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -679,7 +700,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -703,7 +724,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -819,7 +840,12 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/iconfont.css">
+    - <script src="/js/iconfont.js"></script>
+    - <link rel="stylesheet" href="/css/custom.css">
+    # - <link rel="stylesheet" href="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.css"  media="defer" onload="this.media='all'">
+    - <script src="/js/fairyDustCursor.js"></script>
+
   bottom:
     # - <script src="xxxx"></script>
 
