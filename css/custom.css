@@ -1,7 +1,7 @@
 .card_icon {
-  /* 修改颜色 */
-  /* color: blue; */
-  /* 修改大小 */
+  /* 修改颜色
+  color: blue;
+  修改大小 */
   font-size: 24px;
 }
 
@@ -12,4 +12,28 @@ svg.icon {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+
+/* #aside-content
+  .card-info
+  .card-info-social-icons
+  svg
+  use[xlink\:href="#icon-bilibili-fill"]:hover {
+  color: #ffaff2;
+} */
+
+#aside-content .card-info .card-info-social-icons svg {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#aside-content .card-info .card-info-social-icons svg:hover {
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
 }
