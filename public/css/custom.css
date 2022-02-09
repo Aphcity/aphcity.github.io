@@ -1,9 +1,8 @@
-.card_icon {
-  /* 修改颜色
-  color: blue;
-  修改大小 */
-  font-size: 24px;
-}
+/* 
+
+    symbol导入iconfont的SVG图标，加以侧边栏动效
+
+ */
 
 svg.icon {
   width: 1em;
@@ -13,14 +12,6 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
-
-/* #aside-content
-  .card-info
-  .card-info-social-icons
-  svg
-  use[xlink\:href="#icon-bilibili-fill"]:hover {
-  color: #ffaff2;
-} */
 
 #aside-content .card-info .card-info-social-icons svg {
   -webkit-transition: all 0.3s;
@@ -36,4 +27,22 @@ svg.icon {
   -o-transform: rotate(540deg);
   -ms-transform: rotate(540deg);
   transform: rotate(540deg);
+}
+
+/* 
+
+    全局引入字体
+
+ */
+
+@font-face {
+  font-family: "FZFWZhuZiAYuanJWD"; /* 方正FW筑紫A圆 简 D */
+  src: url("/fonts/FZFWZhuZiAYuanJD.OTF"); /* 字体文件路径 */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraCode"; /* Fira Code */
+  src: url("/fonts/FiraCode-VF.ttf"); /* 字体文件路径 */
+  font-display: swap;
 }
