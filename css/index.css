@@ -4736,7 +4736,7 @@ h1.page-title + .tag-cloud-list {
 #rightside {
   position: fixed;
   right: -48px;
-  bottom: 170px;
+  bottom: 100px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -5966,6 +5966,21 @@ blockquote.pullquote.right {
   --hlexpand-bg: linear-gradient(180deg, rgba(23,23,23,0.6), rgba(23,23,23,0.9));
   --scrollbar-color: #1f1f1f;
   --timeline-bg: #1f1f1f;
+/* Twikoo 评论 开始*/
+/* 表单前标题 */
+/* 表单输入框 */
+/* 评论输入框 */
+/* 不显示评论数 */
+/* 加载时背景颜色 */
+/* 评论博主标签圆角 */
+/* 预览按钮 */
+/* 发送按钮禁用状态 */
+/* 发送按钮正常状态 */
+/* 预览框 */
+/* 更多评论的渐变遮罩 */
+/* 评论时间 */
+/* Twikoo 评论 结束*/
+/* GitCalendar 瓷砖 开始*/
 }
 [data-theme='dark'] #web_bg:before,
 [data-theme='dark'] #footer:before,
@@ -6056,6 +6071,69 @@ blockquote.pullquote.right {
 }
 [data-theme='dark'] #operare_artitalk .c2 {
   background: #121212;
+}
+[data-theme='dark'] .el-input-group__append,
+[data-theme='dark'] .el-input-group__prepend {
+  background-color: #292b2c !important;
+  color: #b8b8b8 !important;
+  border: 0px solid #307af6 !important;
+}
+[data-theme='dark'] .el-input__inner {
+  background: #000 !important;
+  border: 0px solid #307af6 !important;
+  color: #b8b8b8 !important;
+}
+[data-theme='dark'] .el-textarea__inner {
+  background: #000 !important;
+  border: 0px solid #307af6 !important;
+  color: #b8b8b8 !important;
+}
+[data-theme='dark'] .tk-comments-title {
+  display: none;
+}
+[data-theme='dark'] .el-loading-mask {
+  background-color: #1d1f20 !important;
+}
+[data-theme='dark'] .tk-tag-green {
+  border-radius: 4px;
+  background-color: rgba(103,194,58,0.129) !important;
+  border: 0px solid #e1f3d8 !important;
+}
+[data-theme='dark'] .el-button {
+  background: #252627 !important;
+  border: 0px solid #307af6 !important;
+  color: #b8b8b8 !important;
+}
+[data-theme='dark'] .el-button:hover {
+  background: #307af6 !important;
+}
+[data-theme='dark'] .el-button--primary.is-disabled,
+[data-theme='dark'] .el-button--primary.is-disabled:active,
+[data-theme='dark'] .el-button--primary.is-disabled:focus,
+[data-theme='dark'] .el-button--primary.is-disabled:hover {
+  background-color: rgba(48,122,246,0.129) !important;
+  border-color: rgba(0,0,0,0) !important;
+  color: #999 !important;
+}
+[data-theme='dark'] .el-button--primary {
+  background-color: #307af6 !important;
+  border-color: #307af6 !important;
+  color: #b8b8b8 !important;
+}
+[data-theme='dark'] .tk-preview-container {
+  color: #b8b8b8;
+  border: 1px solid #f0f0f0;
+}
+[data-theme='dark'] .tk-expand {
+  background: -webkit-linear-gradient(rgba(29,31,32,0), #1d1f20) !important;
+  background: -moz-linear-gradient(rgba(29,31,32,0), #1d1f20) !important;
+  background: -o-linear-gradient(rgba(29,31,32,0), #1d1f20) !important;
+  background: -ms-linear-gradient(rgba(29,31,32,0), #1d1f20) !important;
+  background: linear-gradient(rgba(29,31,32,0), #1d1f20) !important;
+  color: #b8b8b8;
+}
+[data-theme='dark'] .tk-time {
+  color: #999;
 }
 .read-mode {
   --font-color: #4c4948;
@@ -6383,12 +6461,62 @@ div#category {
 #page-header.post-bg:before {
   background-color: transparent !important;
 }
+
+/* 
+
+        阅读模式修改
+
+*/
+
+.read-mode #aside-content .card-widget {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+
+/* 
+
+        夜间模式修改
+
+*/
+
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"] #footer::before {
   background: transparent !important;
 }
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
+}
+
+/* 首页文章卡片 */
+[data-theme="dark"] #recent-posts > .recent-post-item {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 头图透明 */
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 文章页面正文背景 */
+[data-theme="dark"] div#post {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 
+
+        夜间阅读模式
+
+*/
+
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff;
+}
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff;
 }
 
 /* 
