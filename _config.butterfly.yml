@@ -382,7 +382,7 @@ background: url(/img/background-default.jpg)
 footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
-rightside-bottom: 170px
+rightside-bottom: 100px
 
 # Enter transitions (开启网页进入效果)
 enter_transitions: true
@@ -710,14 +710,15 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/iconfont.css">
-    - <script src="/js/iconfont.js"></script>
-    - <link rel="stylesheet" href="/css/custom.css">
-    # - <link rel="stylesheet" href="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.css"  media="defer" onload="this.media='all'">
-    - <script src="/js/fairyDustCursor.js"></script>
+    # - <link rel="stylesheet" href="/css/iconfont.css"> # 阿里iconfont图标库 fontclass对象
+    - <script src="/js/iconfont.js"></script> # 阿里iconfont图标库 symbol对象
+    # - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改
+    - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
 
   bottom:
     # - <script src="xxxx"></script>
+    - <script async src="/js/grayscale.js"></script> # 站点公祭日自动变灰
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -808,3 +809,28 @@ CDN:
   prismjs_js:
   prismjs_lineNumber_js:
   prismjs_autoloader:
+
+# hexo-filter-gitcalendar
+# see https://akilar.top/posts/1f9c68c9/
+gitcalendar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  # butterfly挂载容器
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  user: Aphcity #git用户名
+  apiurl: "https://gitcalendar.akilar.top"
+  minheight:
+    pc: 280px #桌面端最小高度
+    mibile: 100px #移动端最小高度155,233,168
+  # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
+  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
+  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
+  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+  color: "['rgba(139, 141, 145, 0.25)', '#9be9a8', '#8ddb9c', '#80ce8f', '#72c083', '#65b277', '#57a56a', '#4a975e', '#3c8952', '#2f7c45', '#216e39']" # 适配夜间模式的仿 GitHub 配色
+  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
+  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
+  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
