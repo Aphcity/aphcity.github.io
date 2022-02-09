@@ -37,7 +37,7 @@ svg.icon {
 
 @font-face {
   font-family: "FZFWZhuZiAYuanJWD"; /* 方正FW筑紫A圆 简 D */
-  src: url("/fonts/FZFWZhuZiAYuanJWD.ttf"); /* 字体文件路径 */
+  src: url("/fonts/FZFWZhuZiAYuanJD.OTF"); /* 字体文件路径 */
   font-display: swap;
 }
 
