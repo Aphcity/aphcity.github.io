@@ -146,13 +146,13 @@ cover:
 # Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  post_page: /img/404.png
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: "Page Not Found"
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: /img/404.png
 
 post_meta:
   page: # Home Page
@@ -462,7 +462,7 @@ font:
   global-font-size: 16px
   code-font-size: 16px
   font-family: FZFWZhuZiAYuanJWD, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-  code-font-family: FiraCode, consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-family: FiraCode, FZFWZhuZiAYuanJWD, consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
