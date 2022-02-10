@@ -6721,13 +6721,16 @@ svg.icon {
   border-left: 0px solid transparent;
 }
 
-/* 设备名称常态隐藏，悬停评论时显示 */
 .tk-master .tk-extras {
   float: left;
   margin-left: 10px;
 }
 .tk-extras {
   margin-left: 10px;
+}
+
+.tk-comments-title[data-v-2619081a] {
+  margin-bottom: 0px;
 }
 
 /* 自适应内容 */
@@ -6760,7 +6763,7 @@ svg.icon {
     margin-left: 200px;
   }
   .tk-master .tk-content[data-v-d82ce9a0] {
-    margin-top: 0px;
+    margin-top: 5px;
   }
   .tk-master .tk-extras {
     float: right;
