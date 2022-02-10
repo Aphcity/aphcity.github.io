@@ -1,2 +1,8 @@
 .deploy_git/
 themes/butterfly/
+db.json
+public/404.html
+public/index.html
+public/archives/index.html
+public/archives/2022/index.html
+public/archives/2022/02/index.html
