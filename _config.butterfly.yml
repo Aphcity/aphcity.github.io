@@ -201,7 +201,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -712,8 +712,9 @@ inject:
   head:
     # - <link rel="stylesheet" href="/css/iconfont.css"> # 阿里iconfont图标库 fontclass对象
     - <script src="/js/iconfont.js"></script> # 阿里iconfont图标库 symbol对象
-    # - <link rel="stylesheet" href="/css/custom.css">
-    - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改
+    - <link href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改 + 防止浏览器报错 because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checkin...
+    # https://www.cnblogs.com/fanbi/p/11940916.html
+    # - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改
     - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
 
   bottom:
@@ -811,6 +812,7 @@ CDN:
   prismjs_autoloader:
 
 # hexo-filter-gitcalendar
+
 # see https://akilar.top/posts/1f9c68c9/
 gitcalendar:
   enable: true # 开关
@@ -825,7 +827,7 @@ gitcalendar:
   apiurl: "https://gitcalendar.akilar.top"
   minheight:
     pc: 280px #桌面端最小高度
-    mibile: 100px #移动端最小高度155,233,168
+    mobile: 100px #移动端最小高度
   # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
   # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
   # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
@@ -834,3 +836,52 @@ gitcalendar:
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
+
+# footer_beautify
+
+# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
+# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
+footer_beautify:
+  enable:
+    timer: true # 计时器开关
+    bdage: true # 徽标开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude:
+    # 屏蔽页面
+    # - /posts/
+    # - /about/
+  layout: # 挂载容器类型
+    type: id
+    name: footer-wrap
+    index: 0
+  # 计时器部分配置项
+  runtime_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.js
+  runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+  # 徽标部分配置项
+  swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
+  bdageitem:
+    - link: https://hexo.io/ #徽标指向网站链接
+      shields: https://img.shields.io/badge/Frame-Hexo-blue?style=for-the-badge&logo=hexo #徽标API
+      message: 博客框架为Hexo_v5.4.1 #徽标提示语
+    - link: https://butterfly.js.org/
+      shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=for-the-badge&logo=bitdefender
+      message: 主题版本Butterfly_v4.0.1
+    - link: https://www.jsdelivr.com/
+      shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
+      message: 本站使用JsDelivr为静态资源提供CDN加速
+    # - link: https://vercel.com/
+    #   shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=for-the-badge&logo=Vercel
+    #   message: 本站采用双线部署，默认线路托管于Vercel
+    # - link: https://vercel.com/
+    #   shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=for-the-badge&logo=Codio
+    #   message: 本站采用双线部署，联通线路托管于Coding
+    - link: https://github.com/
+      shields: https://img.shields.io/badge/Source-Github-d021d6?style=for-the-badge&logo=GitHub
+      message: 本站项目由Github托管
+    - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+      shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=for-the-badge&logo=Claris
+      message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
+  swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
