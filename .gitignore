@@ -1,6 +1,6 @@
 .deploy_git/
 public/
-themes/butterfly
+themes/butterfly/.git
 .DS_Store
 Thumbs.db
 db.json
