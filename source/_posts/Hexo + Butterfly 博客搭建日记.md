@@ -1,0 +1,262 @@
+---
+title: Hexo + Butterfly 博客搭建日记
+---
+> 全记录，旨在能够找到回家的路。
+
+# 环境配置
+
+Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+安装 Hexo 相当简单，只需要先安装下列应用程序即可：
+
+-   [Node.js](http://nodejs.org/) (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)
+-   [Git](http://git-scm.com/)
+
+## Git
+
+### 安装
+
+对于中国大陆地区用户，可以前往 [淘宝 Git for Windows 镜像](https://npm.taobao.org/mirrors/git-for-windows/) 下载 git 安装包。
+
+-   Windows：下载并安装 [git](https://git-scm.com/download/win).
+-   Mac：使用 [Homebrew](http://mxcl.github.com/homebrew/), [MacPorts](http://www.macports.org/) 或者下载 [安装程序](http://sourceforge.net/projects/git-osx-installer/)。
+-   Linux (Ubuntu, Debian)：`sudo apt-get install git-core`
+-   Linux (Fedora, Red Hat, CentOS)：`sudo yum install git-core`
+
+### 配置`Git`与`GitHub`
+
+此处为全局配置，所以可以在任意位置打开`git bash`，设置用户名称和邮件地址。
+
+``` bash
+git config --global user.name "Aphcity"  
+git config --global user.email "chalk.talisman@gmail.com"
+```
+
+设置完成后为了能够在本地使用`git`管理`github`上的项目，需要绑定`SSHkey`。
+
+``` bash
+ssh-keygen -t rsa -C chalk.talisman@gmail.com  
+# -C后面加你在github的用户名邮箱，这样公钥才会被github认可  
+less ~/.ssh/id_rsa.pub  
+# 查看公钥内容稍后加入Github账户的sshkey中,
+```
+
+打开 [GitHub网页](https://github.com/)  
+单击`头像`->`settings`,在设置页面找到`SSH and GPG keys`，单击`New SSH key`新建`SSH KEY`。
+
+保存后，在`git bash`测试`SSH KEY`是否添加成功，输入
+
+``` bash
+ssh -T git@github.com  
+# Attempts to ssh to GitHub
+```
+
+正常的输出结果是：
+
+``` bash
+The authenticity of host 'github.com (207.97.227.239)' can't be established.  
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.  
+Are you sure you want to continue connecting (yes/no)?  
+# 此处请输入yes  
+Hi username! You've successfully authenticated, but GitHub does not  
+provide shell access.
+```
+
+## Node.js
+
+### 安装
+
+Node.js 为大多数平台提供了官方的 [安装程序](https://nodejs.org/en/download/)。对于中国大陆地区用户，可以前往 [淘宝 Node.js 镜像](https://npm.taobao.org/mirrors/node) 下载。
+
+其它的安装方法：
+
+-   Windows：通过 [nvs](https://github.com/jasongin/nvs/)（推荐）或者 [nvm](https://github.com/nvm-sh/nvm) 安装。
+-   Mac：使用 [Homebrew](https://brew.sh/) 或 [MacPorts](http://www.macports.org/) 安装。
+-   Linux（DEB/RPM-based）：从 [NodeSource](https://github.com/nodesource/distributions) 安装。
+-   其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 [指导](https://nodejs.org/en/download/package-manager/)。
+
+对于 Mac 和 Linux 同样建议使用 nvs 或者 nvm，以避免可能会出现的权限问题。
+
+# 安装 Hexo
+
+1. 所有必备的应用程序安装完成后，首先需要建立博客文件夹，建议建在非系统盘，例如`D:/Hexo/`，那么这个目录就是我们博客的根目录了。因为每个人的命名习惯不同，本帖之后会以`[Blogroot]`指代博客根目录。
+   
+2. 使用`npm`安装`Hexo`,在`[Blogroot]`路径下`右键`->`Git Bash Here`，输入
+
+   ``` bash
+   npm config set registry https://registry.npmmirror.com  
+   #将npm源替换为阿里的镜像。之后的安装就会迅速很多了。  
+   npm install hexo-cli -g  
+   # hexo-cli 是 hexo的指令集。  
+   hexo init  
+   # 有了指令集以后，使用它的初始化指令来初始化安装Hexo博客。
+   ```
+
+3. 安装插件，依然是在`[Blogroot]`路径下`右键`->`Git Bash Here`，使用`npm`指令挑选需要的插件安装。(请仔细阅读注释，确定你是否需要安装这个插件)。
+
+   ``` bash
+   npm install hexo-admin --save  
+   # 网页端hexo文档管理插件，如无需求，可跳过  
+   npm install hexo-deployer-git --save  
+   # git部署插件，必须安装
+   
+   npm install hexo-renderer-stylus --save  
+   # nib css支持插件，如无需求，可跳过  
+   npm install hexo-generator-feed --save  
+   # RSS订阅支持插件，如无需求，可跳过  
+   npm install hexo-generator-sitemap --save  
+   # sitemap生成插件，帮助搜索引擎抓取，如无需求，可跳过  
+   ```
+
+4. Hexo Bash常用命令
+   
+   ``` bash
+   hexo clean  
+   #清空缓存  
+   hexo generate  
+   hexo g #简写  
+   #重新编译  
+   hexo server  
+   hexo s #简写  
+   #打开本地访问  
+   hexo new <layout> "文章title"  
+   #新建文章  
+   hexo deploy  
+   hexo d #简写  
+   #部署到云端
+   ```
+   
+5. 首次本地预览：在`[Blogroot]`路径下`右键`->`Git Bash Here`，输入
+   
+   ``` bash
+   hexo clean && hexo g && hexo s
+   ```
+   
+   然后在浏览器中打开`localhost:4000`，就能看到博客首页了。
+   
+   如果你安装了`hexo-admin`插件，就可以通过访问 [localhost:4000/admin](localhost:4000/admin) 来管理你的文章了。并且在可视化界面中操作文章内容。恭喜你，博客的本地部署到这里算是告一段落了。
+
+# 部署到GitHub
+
+1. 新建`username.github.io`仓库：
+   
+   在`GitHub`首页单击`头像`->`Your repositories`
+   在自己的 GitHub 账号下创建一个新的仓库，命名为 `aphcity.github.io`。
+   
+2. 配置hexo部署插件内容：
+   
+   -   确保你安装了`hexo-deployer-git`,如果没有，在`[Blogroot]`路径下`右键`->`Git Bash Here`，输入：
+     
+    ``` bash
+    npm install hexo-deployer-git --save
+	```
+	
+   -   打开`[Blogroot]/_config.yml`,修改底部的`deploy`配置项。如果没有找到`deploy`配置项,则自己添加：
+     
+    ``` YML
+    # 站点部署到github要配置Deployment  
+	## Docs: https://zespia.tw/hexo/docs/deploy.html  
+	deploy:
+	  type: git
+	  repo:
+	    github:  
+	      url: git@github.com:Aphcity/aphcity.github.io.git  # username为自己的用户名  
+	      branch: gh-page # 亦可以使用默认分支为main，注意修改  
+	```
+	
+3. 把本地`hexo`博客内容提交到`git`仓库
+   
+   - 若以上内容已经准确配置，在`[Blogroot]`路径下`右键`->`Git Bash Here`，输入：
+    ``` bash
+    hexo clean && hexo g && hexo d
+	```
+	
+   - 不出意外，就可以在浏览器上输入`https://aphcity.github.io`访问你的博客了。
+
+# 安装 Butterfly
+
+稳定版【建议】
+
+在`[Blogroot]`路径下`右键`->`Git Bash Here`，输入：
+
+``` bash
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+```
+
+测试版
+
+> 测试版可能存在 bug，追求稳定的请安装稳定版
+
+如果想要安装比较新的 `dev` 分支，可以
+
+``` bash
+git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+```
+
+升级方法：在主题目录下，运行 `git pull`
+
+### 应用主题
+
+修改 Hexo 根目录下的 `_config.yml`，把主题改为 `butterfly`
+
+``` yml
+theme: butterfly
+```
+
+### 安装插件
+
+如果你没有 `pug` 以及 `stylus` 的渲染器，请下载安装：
+
+``` yml
+npm install hexo-renderer-pug hexo-renderer-stylus --save
+```
+
+### 升级建议
+
+在`[Blogroot]`路径下创建一个文件 `_config.butterfly.yml`，并把主题目录的 `_config.yml` 内容复制到 `_config.butterfly.yml` 去。( 注意: 复制的是主题的 `_config.yml` ,而不是 hexo 的 `_config.yml`)
+
+# 博客配置
+
+您可以在 `_config.yml` 中修改大部分的配置。
+
+## 网站
+
+| 参数          | 描述                                                                                                   |
+|-------------|------------------------------------------------------------------------------------------------------|
+| `title`       | 网站标题                                                                                                 |
+| `subtitle`    | 网站副标题，告诉搜索引擎一个关于您站点的简单描述                                                                                                |
+| `description` | 网站描述                                                                                                 |
+| `keywords`    | 网站的关键词。支持多个关键词。                                                                                      |
+| `author`      | 您的名字                                                                                                 |
+| `language`    | 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。                            |
+| `timezone`    | 网站时区。Hexo 默认使用您电脑的时区。对于中国大陆地区可以使用 Asia/Shanghai。 |
+
+``` yml
+title: Aphcity の 窝
+subtitle: "树洞日记"
+description: "无所事事所以充满动力"
+keywords:
+author: Aphcity
+language: zh-CN
+timezone: "Asia/Shanghai"
+```
+
+## 网址
+
+| 参数                         | 描述                                                     | 默认值                       |
+|----------------------------|--------------------------------------------------------|---------------------------|
+| url                        | 网址, 必须以 http:// 或 https:// 开头                          |                           |
+| permalink                  | 文章的 永久链接 格式                                            | :year/:month/:day/:title/ |
+| permalink_defaults         | 永久链接中各部分的默认值                                           |                           |
+| pretty_urls.trailing_index | 是否在永久链接中保留尾部的 index.html，设置为 false 时去除                 | TRUE                      |
+| pretty_urls.trailing_html  | 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效) | TRUE                      |
+
+``` yml
+url: https://aphcity.github.io/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+```
+
+## 主题
