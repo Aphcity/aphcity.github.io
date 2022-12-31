@@ -259,4 +259,170 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 ```
 
-## 主题
+## Algolia 搜索
+
+你需要安装 `hexo-algolia` ，根据它们的说明文档去做相应的配置。
+
+1. 安装 `hexo-algolia` 
+   ``` bash
+   npm install --save hexo-algolia
+   ```
+   
+2. 修改 `_config.butterfly.yml`
+   ``` yml
+   algolia_search:
+	   enable: true
+	   hits:
+		   per_page: 6
+   ```
+
+3. 注册登录 [Algolia官网](https://www.algolia.com/) ，或者直接用[GitHub](https://so.csdn.net/so/search?q=GitHub&spm=1001.2101.3001.7020)账号登陆
+   
+4. 新建一个 `index`
+   
+5. 左侧侧边栏找到 `API Keys`，进入后，点击 `ALL API Keys`，**这点比较重要，因为前面的API不可用，要自己新建一个拥有增加删除权限的api key**
+   
+   ![创建API Keys](https://imgconvert.csdnimg.cn/aHR0cDovL3BpYy5oZXNvbi54eXovaW1nL2ltYWdlLTIwMjAwNzEzMjI1OTExNDQ0LnBuZw?x-oss-process=image/format,png)
+   
+   点击 `New API Key`，如图所示，重要的是在ACL里面增加删除和新增Object的权限，然后填上 `indices` 栏目中的 `index name`，可以选刚才你创建的那个 `index` ，其余默认就行。
+   
+   ![New API Key](https://imgconvert.csdnimg.cn/aHR0cDovL3BpYy5oZXNvbi54eXovaW1nL2ltYWdlLTIwMjAwNzEzMjMwMDU0MzUwLnBuZw?x-oss-process=image/format,png)
+   
+   这样你就有了一个 `API Key`。
+   
+   ![API Key](https://imgconvert.csdnimg.cn/aHR0cDovL3BpYy5oZXNvbi54eXovaW1nL2ltYWdlLTIwMjAwNzEzMjMwMzQ1MDQ2LnBuZw?x-oss-process=image/format,png)
+
+6. 修改 `_config.yml`
+   
+   注意 `apikey` 填写刚才你创建的那个有权限的，其余的在 `Your API Keys` 里面可以找到
+   
+   ``` yml
+   algolia:
+    applicationID: 'applicationID' # Your Algolia Application ID
+    apiKey: 'apiKey' # A **Search-Only** API key
+    adminApiKey: 'your adminApiKey'
+    indexName: '...' # The name of the Algolia index to use
+    chunkSize: 5000
+   ```
+
+7. 上传数据到 `algolia`，下面 `your apiKey` 替换为刚才自己创建拥有权限的api
+   
+   ``` bash
+   export HEXO_ALGOLIA_INDEXING_KEY=your apiKey
+   hexo algolia
+   ```
+   
+   看到如下信息，证明成功了，可以去 `Algolia` 网站上查看，索引已经上传成功了。
+   
+   ``` bash
+   INFO  [Algolia] Testing HEXO_ALGOLIA_INDEXING_KEY permissions.
+   INFO  Start processing
+   INFO  [Algolia] Identified 5 pages and posts to index.
+   INFO  [Algolia] Indexing chunk 1 of 1 (50 items each)
+   INFO  [Algolia] Indexing done.
+   ```
+   
+# 魔改优化日记
+
+## 博客使用一图流
+
+### 去除背景配置
+
+1. 打开主题配置文件（注意：不是博客配置文件）`_config.yml`，按 `Ctrl+F` 快捷键弹出搜索框，输入 `banner` 关键词，将以下图片链接去掉。修改如下配置项：
+   
+   ``` yml
+   # Disable all banner image
+   disable_top_img: false
+   # The banner image of home page
+   index_img: 
+   # If the banner of page not setting, it will show the top_img
+   default_top_img: transparent
+   # The banner image of archive page
+   archive_img:
+   # If the banner of tag page not setting, it will show the top_img
+   # note: tag page, not tags page (子標籤頁面的 top_img)
+   tag_img:
+   # The banner image of tag page
+   # format:
+   #  - tag name: xxxxx
+   tag_per_img:
+   # If the banner of category page not setting, it will show the top_img
+   # note: category page, not categories page (子分類頁面的 top_img)
+   category_img:
+   # The banner image of category page
+   # format:
+   #  - category name: xxxxx
+   category_per_img:
+   ```
+   
+2. 搜索关键词 `background`, 将颜色设置为：
+   
+   ``` yml
+   # Website Background (設置網站背景)
+   # can set it to color or image (可設置圖片 或者 顔色)
+   # The formal of image: url(http://xxxxxx.com/xxx.jpg)
+   background: url(/img/banner.jpg) # 修改为自己的图片
+   # Footer Background
+   footer_bg: transparent
+   ```
+
+### 引入魔改样式，修改 CSS 样式
+
+1. 以 butterfly 主题为例，可以在 `[Blogroot]\themes\butterfly\source\css\` 目录下新建 custom.css 文件，然后在  `_config.butterfly.yml` 的 `inject` 配置项中引入自定义样式文件。
+   
+   ``` yml
+   inject:
+	   head:
+	   - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
+   ```
+   
+   其中 `media="defer" onload="this.media='all'"` 是异步加载配置项，确保自定义样式会在页面加载完成后才继续渲染。如果没有需求或效果不好可以不加这个。
+   
+2. 我的博客一图流 `css` 样式设置如下，修改 `custom.css` 文件：
+   
+   ``` css
+   /* 首页文章卡片 */
+   #recent-posts > .recent-post-item {background: rgba(255, 255, 255, 0.85);}
+   /* 首页侧栏卡片 */
+   .card-widget {background: rgba(255, 255, 255, 0.85) !important;}
+   /* 文章页面正文背景 */
+   div#post {background: rgba(255, 255, 255, 0.85);}
+   /* 分页页面 */
+   div#page {background: rgba(255, 255, 255, 0.85);}
+   /* 归档页面 */
+   div#archive {background: rgba(255, 255, 255, 0.85);}
+   /* 标签页面 */
+   div#tag {background: rgba(255, 255, 255, 0.85);}
+   /* 分类页面 */
+   div#category {background: rgba(255, 255, 255, 0.85);}
+   #footer {opacity: 0.5;}
+   /* 页脚透明 */
+   #footer {background: transparent !important;}
+   /* 页脚黑色透明玻璃效果移除 */
+   #footer::before {background: transparent !important;}
+   /* 头图透明 */
+   #page-header {background: transparent !important;}
+   /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+   #page-header.post-bg:before {background-color: transparent !important;}
+   /*阅读模式修改*/
+   .read-mode #aside-content .card-widget {background: rgba(158, 204, 171, 0.5) !important;}
+   .read-mode div#post {background: rgba(158, 204, 171, 0.5) !important;}
+   /*夜间模式修改*/
+   /*夜间模式伪类遮罩层透明*/
+   [data-theme="dark"] #footer::before {background: transparent !important;}
+   [data-theme="dark"] #page-header::before {background: transparent !important;}
+   /* 首页文章卡片 */
+   [data-theme="dark"] #recent-posts > .recent-post-item {background: rgba(0, 0, 0, 0.5) !important;}
+   /* 头图透明 */
+   [data-theme="dark"] #aside-content .card-widget {background: rgba(0, 0, 0, 0.5) !important;}
+   /* 文章页面正文背景 */
+   [data-theme="dark"] div#post {background: rgba(0, 0, 0, 0.5) !important;}
+   [data-theme="dark"] div#archive {background: rgba(0, 0, 0, 0.5) !important;}
+   [data-theme="dark"] div#category {background: rgba(0, 0, 0, 0.5) !important;}
+   [data-theme="dark"] div#page {background: rgba(0, 0, 0, 0.5) !important;}
+   /*夜间阅读模式*/
+   [data-theme="dark"] .read-mode #aside-content .card-widget {background: rgba(0, 0, 0, 0.5) !important;color: #ffffff;}
+   [data-theme="dark"] .read-mode div#post {background: rgba(0, 0, 0, 0.5) !important;color: #ffffff;}
+   ```
+   
+

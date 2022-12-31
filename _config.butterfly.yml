@@ -58,7 +58,7 @@ social:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
 
@@ -138,6 +138,7 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://w.wallhaven.cc/full/lm/wallhaven-lm1o7p.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:

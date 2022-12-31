@@ -106,3 +106,11 @@ deploy:
   # repo: https://github.com/Aphcity/aphcity.github.io
   repo: git@github.com:Aphcity/aphcity.github.io.git
   branch: gh-page
+
+#algolia search
+algolia:
+  applicationID: "YXAWAAF0PP"
+  apiKey: "1b5214708e38cd5e2c64e072d1cd33d8"
+  adminApiKey: "404fc0c6c136ea5964ffbff6ff10c7d4"
+  indexName: "hexo_blog"
+  chunkSize: 5000
