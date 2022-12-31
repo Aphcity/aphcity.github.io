@@ -260,6 +260,39 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 ```
 
+## 域名配置
+
+为了能够使用自己的域名访问我们的博客，需要再进行域名绑定：
+
+首先要获取博客当前默认域名的`IP`,打开`cmd`或者`powershell`，输入：
+
+``` shell
+ping aphcity.github.io
+```
+
+获取到的`ip`地址填入域名解析。进入解析页面后需要添加两条记录。
+
+<center>
+
+| 主机记录 | 类型    | 记录值               |
+|------|-------|-------------------|
+| @    | A     | ip                |
+| www  | CNAME | aphcity.github.io |
+
+</center>
+
+在`[Blogroot]\source\`目录下新建`CNAME`文件（注意不要有后缀名，就叫`CNAME`即可，什么`.txt`、`.js`之类的后缀都不能有），在`CNAME`文件中添加上你购买的域名。
+
+``` CNAME
+aphcity.cyou
+```
+
+配置`username.github.io`仓库。
+
+打开`username.github.io`，点击仓库页面右上角的 `setting`，下拉找到 `Github Pages` 栏，在 `Custom domain` 中填入你购买的域名。
+
+最后，重新部署一下 `hexo` 即可通过你的域名来访问博客了
+
 ## Algolia 搜索
 
 你需要安装 `hexo-algolia` ，根据它们的说明文档去做相应的配置。
