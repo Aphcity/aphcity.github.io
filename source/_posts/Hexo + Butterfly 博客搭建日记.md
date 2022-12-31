@@ -360,6 +360,24 @@ markdown:
         strict: false
 ```
 
+## Twikoo 评论系统
+
+Twikoo 是一个简洁、安全、无后端的静态网站评论系统，基于腾讯云开发。
+
+具体如何配置评论，请查看 [Twikoo文档](https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96)
+
+你只需要把获取到的 环境ID (envId) 填写到配置上去就行
+
+修改 `_config.butterfly.yml`
+
+```yml
+twikoo:
+  envId: # 环境 ID
+  region: # 环境地域，默认为 ap-shanghai
+  visitor: false # 是否显示文章閲读数，开启 visitor 后，文章页的访问人数将改为 Twikoo 提供，而不是 不蒜子
+  option: # 可选配置
+```
+
 # 魔改优化日记
 
 ## 合并CSS以减少请求次数
