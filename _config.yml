@@ -114,3 +114,11 @@ algolia:
   adminApiKey: "404fc0c6c136ea5964ffbff6ff10c7d4"
   indexName: "hexo_blog"
   chunkSize: 5000
+
+#Katex
+markdown:
+  plugins:
+    - plugin:
+      name: "@neilsustc/markdown-it-katex"
+      options:
+        strict: false

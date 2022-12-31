@@ -1,5 +1,6 @@
 ---
 title: Hexo + Butterfly 博客搭建日记
+katex: true
 ---
 > 全记录，旨在能够找到回家的路。
 
@@ -322,6 +323,43 @@ pretty_urls:
    INFO  [Algolia] Indexing done.
    ```
    
+## Katex 配置
+
+测试：$f'(x)$
+
+首先禁用 `MathJax`（如果你配置过 `MathJax` 的话），然后修改你的主题配置文件以便加载 `katex.min.css` :
+
+``` yml
+katex:
+  enable: true
+  # true 表示每一页都加载katex.js
+  # false 需要时加载，须在使用的Markdown Front-matter 加上 katex: true
+  per_page: false
+  hide_scrollbar: true
+```
+
+你不需要添加 `katex.min.js` 来渲染数学方程。相应的你需要卸载你之前的 `hexo` 的 `markdown` 渲染器，然后安装其它插件。
+
+卸载掉 `marked` 插件，安装 `hexo-renderer-markdown-it`
+
+``` bash
+npm un hexo-renderer-marked --save
+npm un hexo-renderer-kramed --save
+npm i hexo-renderer-markdown-it --save
+npm install @neilsustc/markdown-it-katex --save
+```
+
+在 hexo 的根目录的 `_config.yml` 中配置
+
+``` yml
+markdown:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
+```
+
 # 魔改优化日记
 
 ## 博客使用一图流
