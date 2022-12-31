@@ -92,11 +92,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://s2.loli.net/2022/02/08/frHwhcxOoXTUqk5.png
+favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
   effect: false
 
 # Disable all banner image
@@ -140,25 +140,26 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://w.wallhaven.cc/full/lm/wallhaven-lm1o7p.png
+    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
+    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  post_page: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: "Page Not Found"
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
@@ -170,7 +171,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -190,7 +191,7 @@ anchor:
     enable: false
     always_show: false
     icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  auto_update: true # when you scroll in post, the URL will update according to header id.
 
 # Post
 # --------------------------------------
@@ -200,12 +201,12 @@ toc:
   post: true
   page: false
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -220,6 +221,12 @@ reward:
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
+    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
+      link:
+      text: 微信
+    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
+      link:
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -236,7 +243,7 @@ related_post:
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # post_pagination (分頁)
 # value: 1 || 2 || false
@@ -247,12 +254,12 @@ post_pagination: 1
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 100 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 本文上次更新已有
+  message_next: 天, 文章内容可能已经过期。
 
 # Share System (分享功能)
 # --------------------------------------
@@ -260,13 +267,13 @@ noticeOutdate:
 # AddThis
 # https://www.addthis.com/
 addThis:
-  enable: false
-  pubid:
+  enable: true
+  pubid: ra-620330f41b9b3409
 
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -535,7 +542,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(/img/background-default.jpg)
+background: url(https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
 
 # Footer Background
 footer_bg: true

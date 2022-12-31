@@ -362,6 +362,35 @@ markdown:
 
 # 魔改优化日记
 
+## 合并CSS以减少请求次数
+
+将魔改样式整合到`index.css`文件内，减少对服务器的请求次数。能够节省大量加载时间。
+
+我的做法如下：
+
+1. 在 `[Blogroot]\themes\butterfly\source\css\` 路径下新建 `_custom` 文件夹，然后把魔改样式的`CSS`文件拖动进去。文件目录层级可以表示为以下情况：
+   
+   ``` yml
+   source  
+     |__ css  
+        |__ _custom  
+            |__ custom1.css  
+            |__ custom2.css  
+            |__ custom3.css  
+        |__ index.styl
+   ```
+   
+2. 在 `[Blogroot]\themes\butterfly\source\css\index.styl` 中新增一行代码: `@import '_custom/*.css'`，表示引入 `_custom` 文件夹下的所有CSS文件。
+   
+``` diff 
+       @import 'nib'  
+       @import '_third-party/*.css'  
++      @import '_custom/*.css'  
+       // project  
+       @import 'var'  
+       @import '_global/*'  
+```
+
 ## 博客使用一图流
 
 ### 去除背景配置
