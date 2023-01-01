@@ -671,9 +671,9 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url:
+  pace_css_url: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/css/barber-shop.css
 
 # aside (側邊欄)
 # --------------------------------------
@@ -1038,7 +1038,7 @@ footer_beautify:
     - link: https://butterfly.js.org/
       shields: https://img.shields.io/badge/Theme-Butterfly%204.5.1-6513df?style=for-the-badge&logo=bitdefender
       message: 主题版本Butterfly_v4.5.1
-    - link: https://www.jsdelivr.com/
+    - link: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/
       shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
       message: 本站使用JsDelivr为静态资源提供CDN加速
     # - link: https://vercel.com/
@@ -1047,7 +1047,7 @@ footer_beautify:
     # - link: https://vercel.com/
     #   shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=for-the-badge&logo=Codio
     #   message: 本站采用双线部署，联通线路托管于Coding
-    - link: https://github.com/
+    - link: https://github.com/Aphcity/aphcity.github.io
       shields: https://img.shields.io/badge/Source-Github-d021d6?style=for-the-badge&logo=GitHub
       message: 本站项目由Github托管
     - link: https://cloudflare.com/

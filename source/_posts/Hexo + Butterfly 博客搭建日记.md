@@ -504,6 +504,51 @@ twikoo:
      swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
    ```
 
+## 日志自动分类插件
+
+Hexo写日志，通常我们都需要维护一个front-matter信息，包括`title`、`date`。博客多了，为了方便日志分类，一般还需要设置`categories`。
+
+比如下面的例子：
+
+``` markdown
+---
+title: Hexo简介
+date: 2008-08-08
+categories:
+  - web开发
+  - 前端
+  - 博客框架
+---
+```
+
+本文介绍一种**自动生成categories**的插件 [hexo-auto-category官方地址](https://github.com/xu-song/hexo-auto-category)。
+
+对于博客 `source/_post/web/framework/hexo.md`，该插件会自动生成以下`categories`
+
+``` markdown
+categories:
+  - web
+  - framework
+```
+
+1. 安装
+   
+   ``` bash
+   npm install hexo-auto-category --save
+   ```
+   
+2. 配置
+   在站点根目录下的`_config.yml`添加：
+   
+   ``` yml
+   # Generate categories from directory-tree
+   # Dependencies: https://github.com/xu-song/hexo-auto-category
+   # depth: the depth of directory-tree you want to generate, should > 0
+   auto_category:
+    enable: true
+    depth: # 如果只想生成第一级目录分类，可以设置`depth`属性为 1
+   ```
+   
 # 魔改优化日记
 
 ## 合并CSS以减少请求次数
