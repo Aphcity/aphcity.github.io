@@ -411,6 +411,99 @@ twikoo:
   option: # 可选配置
 ```
 
+## Git-Calendar
+
+1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
+   
+   ```bash
+   npm install hexo-filter-gitcalendar --save
+   ```
+   
+2. 添加配置信息，在站点配置文件`_config.yml`或者主题配置文件如`_config.butterfly.yml`中添加：
+
+   ``` yml
+   # hexo-filter-gitcalendar
+   # see https://akilar.top/posts/1f9c68c9/
+   gitcalendar:
+   enable: true # 开关
+   priority: 5 #过滤器优先权
+   enable_page: / # 应用页面
+   # butterfly挂载容器
+   layout: # 挂载容器类型
+      type: id
+      name: recent-posts
+      index: 0
+   user: Aphcity #git用户名
+   apiurl: "https://gitcalendar.aphcity.cyou"
+   minheight:
+      pc: 280px #桌面端最小高度
+      mobile: 100px #移动端最小高度
+   color: "['rgba(139, 141, 145, 0.25)', '#9be9a8', '#8ddb9c', '#80ce8f', '#72c083', '#65b277', '#57a56a', '#4a975e', '#3c8952', '#2f7c45', '#216e39']" # 适配夜间模式的仿 GitHub 配色
+   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
+   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
+   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
+   ```
+
+## 页脚计时器和页脚徽标
+
+1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
+   
+   ```bash
+   npm install hexo-butterfly-footer-beautify --save
+   ```
+   
+2. 添加配置信息，在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
+   
+   ``` yml
+   # footer_beautify
+   # 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
+   # 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
+   footer_beautify:
+     enable:
+       timer: true # 计时器开关
+       bdage: true # 徽标开关
+     priority: 5 #过滤器优先权
+     enable_page: all # 应用页面
+     exclude:
+       # 屏蔽页面
+       # - /posts/
+       # - /about/
+     layout: # 挂载容器类型
+       type: id
+       name: footer-wrap
+       index: 0
+     # 计时器部分配置项
+     runtime_js: /js/runtime.js
+     runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+     # 徽标部分配置项
+     swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
+     bdageitem:
+       - link: https://hexo.io/ #徽标指向网站链接
+         shields: https://img.shields.io/badge/Frame-Hexo-blue?style=for-the-badge&logo=hexo #徽标API
+         message: 博客框架为Hexo_v5.4.1 #徽标提示语
+       - link: https://butterfly.js.org/
+         shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=for-the-badge&logo=bitdefender
+         message: 主题版本Butterfly_v4.0.1
+       - link: https://www.jsdelivr.com/
+         shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
+         message: 本站使用JsDelivr为静态资源提供CDN加速
+       # - link: https://vercel.com/
+       #   shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=for-the-badge&logo=Vercel
+       #   message: 本站采用双线部署，默认线路托管于Vercel
+       # - link: https://vercel.com/
+       #   shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=for-the-badge&logo=Codio
+       #   message: 本站采用双线部署，联通线路托管于Coding
+       - link: https://github.com/
+         shields: https://img.shields.io/badge/Source-Github-d021d6?style=for-the-badge&logo=GitHub
+         message: 本站项目由Github托管
+       - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+         shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=for-the-badge&logo=Claris
+         message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+     swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
+     swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
+     swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
+   ```
+
 # 魔改优化日记
 
 ## 合并CSS以减少请求次数

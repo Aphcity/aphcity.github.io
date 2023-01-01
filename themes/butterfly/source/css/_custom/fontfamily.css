@@ -1,0 +1,17 @@
+/* 
+
+    全局引入字体
+
+ */
+
+@font-face {
+  font-family: "FZFWZhuZiAYuanJD"; /* 方正FW筑紫A圆 简 D */
+  src: url("/fonts/FZFWZhuZiAYuanJD.OTF"); /* OTF 》 TTF */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraCode"; /* Fira Code */
+  src: url("/fonts/FiraCode-VF.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
