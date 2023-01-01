@@ -15,3 +15,51 @@
   src: url("/fonts/FiraCode-VF.ttf"); /* 字体文件路径 */
   font-display: swap;
 }
+
+/*
+    iconfont fontclass引用
+*/
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3171217 */
+  /* Color fonts */
+  src: 
+       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff2?t=1644314467450') format('woff2'),
+       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff?t=1644314467450') format('woff'),
+       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.ttf?t=1644314467450') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Gmail:before {
+  content: "\edc5";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-netease-cloud-music-line:before {
+  content: "\e76a";
+}
+
+.icon-leetcode:before {
+  content: "\ebf2";
+}
+
+.icon-bilibili-fill:before {
+  content: "\e66b";
+}
+
+/* 卡片处小图标 */
+.card_icon {
+  /* 修改颜色 */
+  /* 修改大小 */
+  font-size: 18px;
+}
