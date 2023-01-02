@@ -109,11 +109,15 @@ deploy:
 
 #algolia search
 algolia:
-  applicationID: "YXAWAAF0PP"
+  appId: "YXAWAAF0PP"
   apiKey: "1b5214708e38cd5e2c64e072d1cd33d8"
   adminApiKey: "404fc0c6c136ea5964ffbff6ff10c7d4"
   indexName: "hexo_blog"
   chunkSize: 5000
+  fields:
+    - path
+    - title
+    - content:strip
 
 #Katex
 markdown:
