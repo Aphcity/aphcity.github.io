@@ -217,6 +217,8 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 在`[Blogroot]`路径下创建一个文件 `_config.butterfly.yml`，并把主题目录的 `_config.yml` 内容复制到 `_config.butterfly.yml` 去。( 注意: 复制的是主题的 `_config.yml` ,而不是 hexo 的 `_config.yml`)
 
+同时，为了防止出现诸如 `git commit` 内容是主题文档的 `git commit history` 的错误，打开`[Blogroot]\.gitgnore`，手动添加 `themes/butterfly/.git`，一劳永逸
+
 # 博客配置
 
 您可以在 `_config.yml` 中修改大部分的配置。
@@ -421,7 +423,7 @@ twikoo:
    npm install hexo-filter-gitcalendar --save
    ```
    
-2. 添加配置信息，在站点配置文件`_config.yml`或者主题配置文件如`_config.butterfly.yml`中添加：
+2. 添加配置信息，在站点配置文件 `_config.yml` 或者主题配置文件如 `_config.butterfly.yml` 中添加：
 
    ``` yml
    # hexo-filter-gitcalendar
@@ -795,4 +797,21 @@ categories:
    [data-theme="dark"] .read-mode div#post {background: rgba(0, 0, 0, 0.5) !important;color: #ffffff;}
    ```
    
+# 主题升级
+
+进入 `[Blogroot]/themes` ，打开终端，输入：
+
+   ```bash
+   git pull
+   ```
+
+之后打开 `Butterfly` 主题 `GitHub` [Release 页面](https://github.com/jerryc127/hexo-theme-butterfly/releases)
+
+![GitHub-Releases-版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-版本对比.25253703rfmo.webp)
+
+选择更新之前的版本，进入版本比对视图
+
+向下滚动找到 `_config.yml` 的对比视图，并根据其更改调整自己的主题配置文件 `_config.butterfly.yml`
+
+![GitHub-Releases-主题配置文件版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-主题配置文件版本对比.965zj5g7z5w.webp)
 
