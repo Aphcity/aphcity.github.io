@@ -297,6 +297,27 @@ aphcity.cyou
 
 最后，重新部署一下 `hexo` 即可通过你的域名来访问博客了
 
+## 永久链接配置
+
+Hexo URL 的默认规则是 年/月/日/标题，这样其实不利于SEO。
+
+Hexo文章的url在博客根目录的`_config.yml`中进行配置，默认配置如下：
+
+``` yml
+permalink: :year/:month/:day/:title/
+```
+
+这里的`:title`为`source/_post`下的相对路径，但是这样的话很容易造成url中文乱码，和不同浏览器因为字符集的问题导致的url失效。  
+这里建议尽量不使用默认配置，推荐使用如下采用 hash 值的方案：
+
+直接修改`_config.yml`为：
+
+``` yml
+permalink: :category/:hash/
+```
+
+这样每次生成文章url，会自动生成hash值，保证不重复且不会因为编码出错。
+
 ## Algolia 搜索
 
 你需要安装 `hexo-algolia` ，根据它们的说明文档去做相应的配置。
