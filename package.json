@@ -19,7 +19,7 @@
     "hexo-algoliasearch": "^1.0.0",
     "hexo-auto-category": "^0.2.1",
     "hexo-butterfly-footer-beautify": "^1.0.6",
-    "hexo-deployer-git": "^3.0.0",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-filter-gitcalendar": "^1.0.11",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
