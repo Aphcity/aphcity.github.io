@@ -14,11 +14,11 @@ menu:
   # About: /about/ || fas fa-heart
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
+  # 标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   清单||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
-    照片: /Gallery/ || fas fa-images
+    照片: /gallery/ || fas fa-images
     电影: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
@@ -97,7 +97,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
+favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
 
 # Avatar (頭像)
 avatar:
@@ -672,7 +672,7 @@ preloader:
   # 2. pace (progress bar)
   source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/css/barber-shop.css
+  pace_css_url: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/css/barber-shop.min.css
 
 # aside (側邊欄)
 # --------------------------------------
@@ -906,7 +906,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改 + 防止浏览器报错 because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checkin...
-    - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
+    # - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
 
   bottom:
     # - <script src="xxxx"></script>
@@ -1008,8 +1008,8 @@ gitcalendar:
   # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   color: "['rgba(139, 141, 145, 0.25)', '#9be9a8', '#8ddb9c', '#80ce8f', '#72c083', '#65b277', '#57a56a', '#4a975e', '#3c8952', '#2f7c45', '#216e39']" # 适配夜间模式的仿 GitHub 配色
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
-  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
+  gitcalendar_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.css
+  gitcalendar_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.js
 
 # footer_beautify
 
@@ -1030,8 +1030,8 @@ footer_beautify:
     name: footer-wrap
     index: 0
   # 计时器部分配置项
-  runtime_js: /js/runtime.js
-  runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+  runtime_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.js
+  runtime_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.css
   # 徽标部分配置项
   swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
@@ -1059,6 +1059,6 @@ footer_beautify:
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=for-the-badge&logo=Claris
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
-  swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
+  swiper_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.css
+  swiper_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.js
+  swiperbdage_init_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiperbdage_init.min.js
