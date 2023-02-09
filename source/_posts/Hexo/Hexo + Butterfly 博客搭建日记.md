@@ -1,9 +1,11 @@
 ---
 title: Hexo + Butterfly 博客搭建日记
 katex: true
-cover: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
+cover: >-
+  https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
   - Hexo
+abbrlink: aef5367a
 ---
 > 全记录，旨在能够找到回家的路。
 
