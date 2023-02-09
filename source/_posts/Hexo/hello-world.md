@@ -39,5 +39,5 @@ $ hexo deploy
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
-<div align=center><img src="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230208/Fflxr98WIAEOK8L.e00533b9226c.jpg"/ width = 50% title = "雷电将军"></div>
+<div align=center><img src="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230208/Fflxr98WIAEOK8L.e00533b9226c.jpg" width = 50% title = "雷电将军"></div>
 
