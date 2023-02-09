@@ -6,7 +6,7 @@ categories:
 ---
 > 全记录，旨在能够找到回家的路。
 
-# 环境配置
+## 环境配置
 
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 安装 Hexo 相当简单，只需要先安装下列应用程序即可：
@@ -14,9 +14,9 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 -   [Node.js](http://nodejs.org/) (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)
 -   [Git](http://git-scm.com/)
 
-## Git
+### Git
 
-### 安装
+#### 安装
 
 对于中国大陆地区用户，可以前往 [淘宝 Git for Windows 镜像](https://npm.taobao.org/mirrors/git-for-windows/) 下载 git 安装包。
 
@@ -25,7 +25,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 -   Linux (Ubuntu, Debian)：`sudo apt-get install git-core`
 -   Linux (Fedora, Red Hat, CentOS)：`sudo yum install git-core`
 
-### 配置`Git`与`GitHub`
+#### 配置`Git`与`GitHub`
 
 此处为全局配置，所以可以在任意位置打开`git bash`，设置用户名称和邮件地址。
 
@@ -64,9 +64,9 @@ Hi username! You've successfully authenticated, but GitHub does not
 provide shell access.
 ```
 
-## Node.js
+### Node.js
 
-### 安装
+#### 安装
 
 Node.js 为大多数平台提供了官方的 [安装程序](https://nodejs.org/en/download/)。对于中国大陆地区用户，可以前往 [淘宝 Node.js 镜像](https://npm.taobao.org/mirrors/node) 下载。
 
@@ -79,7 +79,7 @@ Node.js 为大多数平台提供了官方的 [安装程序](https://nodejs.org/
 
 对于 Mac 和 Linux 同样建议使用 nvs 或者 nvm，以避免可能会出现的权限问题。
 
-# 安装 Hexo
+## 安装 Hexo
 
 1. 所有必备的应用程序安装完成后，首先需要建立博客文件夹，建议建在非系统盘，例如`D:/Hexo/`，那么这个目录就是我们博客的根目录了。因为每个人的命名习惯不同，本帖之后会以`[Blogroot]`指代博客根目录。
    
@@ -138,7 +138,7 @@ Node.js 为大多数平台提供了官方的 [安装程序](https://nodejs.org/
    
    如果你安装了`hexo-admin`插件，就可以通过访问 [localhost:4000/admin](localhost:4000/admin) 来管理你的文章了。并且在可视化界面中操作文章内容。恭喜你，博客的本地部署到这里算是告一段落了。
 
-# 部署到GitHub
+## 部署到GitHub
 
 1. 新建`username.github.io`仓库：
    
@@ -175,7 +175,7 @@ Node.js 为大多数平台提供了官方的 [安装程序](https://nodejs.org/
 	
    - 不出意外，就可以在浏览器上输入`https://aphcity.github.io`访问你的博客了。
 
-# 安装 Butterfly
+## 安装 Butterfly
 
 稳定版【建议】
 
@@ -219,11 +219,11 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 同时，为了防止出现诸如 `git commit` 内容是主题文档的 `git commit history` 的错误，打开`[Blogroot]\.gitgnore`，手动添加 `themes/butterfly/.git`，一劳永逸
 
-# 博客配置
+## 博客配置
 
 您可以在 `_config.yml` 中修改大部分的配置。
 
-## 网站
+### 网站
 
 | 参数          | 描述                                                                                                   |
 |-------------|------------------------------------------------------------------------------------------------------|
@@ -245,7 +245,7 @@ language: zh-CN
 timezone: "Asia/Shanghai"
 ```
 
-## 网址
+### 网址
 
 | 参数                         | 描述                                                     | 默认值                       |
 |----------------------------|--------------------------------------------------------|---------------------------|
@@ -264,7 +264,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 ```
 
-## 域名配置
+### 域名配置
 
 为了能够使用自己的域名访问我们的博客，需要再进行域名绑定：
 
@@ -297,7 +297,7 @@ aphcity.cyou
 
 最后，重新部署一下 `hexo` 即可通过你的域名来访问博客了
 
-## 永久链接配置
+### 永久链接配置
 
 Hexo URL 的默认规则是 年/月/日/标题，这样其实不利于SEO。
 
@@ -318,7 +318,7 @@ permalink: :category/:hash/
 
 这样每次生成文章url，会自动生成hash值，保证不重复且不会因为编码出错。
 
-## Algolia 搜索
+### Algolia 搜索
 
 你需要安装 `hexo-algolia` ，根据它们的说明文档去做相应的配置。
 
@@ -381,7 +381,7 @@ permalink: :category/:hash/
    INFO  [Algolia] Indexing done.
    ```
    
-## Katex 配置
+### Katex 配置
 
 测试：$f'(x)$
 
@@ -418,7 +418,7 @@ markdown:
         strict: false
 ```
 
-## Twikoo 评论系统
+### Twikoo 评论系统
 
 Twikoo 是一个简洁、安全、无后端的静态网站评论系统，基于腾讯云开发。
 
@@ -436,7 +436,7 @@ twikoo:
   option: # 可选配置
 ```
 
-## Git-Calendar
+### Git-Calendar
 
 1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
    
@@ -469,7 +469,7 @@ twikoo:
    gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
    ```
 
-## 页脚计时器和页脚徽标
+### 页脚计时器和页脚徽标
 
 1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
    
@@ -529,7 +529,7 @@ twikoo:
      swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
    ```
 
-## 日志自动分类插件
+### 日志自动分类插件
 
 Hexo写日志，通常我们都需要维护一个front-matter信息，包括`title`、`date`。博客多了，为了方便日志分类，一般还需要设置`categories`。
 
@@ -574,7 +574,7 @@ categories:
     depth: # 如果只想生成第一级目录分类，可以设置`depth`属性为 1
    ```
 
-## gulp 压缩静态资源
+### gulp 压缩静态资源
 
 [gulp](https://www.gulpjs.com.cn/)能够帮助用户自动压缩静态资源，配合各类下属插件，能够压缩包括css、js、html乃至各类格式的图片文件。（**图片文件的压缩往往只能节省几十KB，效果远远不如imagine、tinypng等压缩方式，所以此处不再写使用gulp压缩图片的内容**）
 
@@ -686,9 +686,9 @@ categories:
    ))
       ```
 
-# 魔改优化日记
+## 魔改优化日记
 
-## 合并CSS以减少请求次数
+### 合并CSS以减少请求次数
 
 将魔改样式整合到`index.css`文件内，减少对服务器的请求次数。能够节省大量加载时间。
 
@@ -717,9 +717,9 @@ categories:
        @import '_global/*'  
 ```
 
-## 博客使用一图流
+### 博客使用一图流
 
-### 去除背景配置
+#### 去除背景配置
 
 1. 打开主题配置文件（注意：不是博客配置文件）`_config.yml`，按 `Ctrl+F` 快捷键弹出搜索框，输入 `banner` 关键词，将以下图片链接去掉。修改如下配置项：
    
@@ -759,7 +759,7 @@ categories:
    footer_bg: transparent
    ```
 
-### 引入魔改样式，修改 CSS 样式
+#### 引入魔改样式，修改 CSS 样式
 
 1. 以 butterfly 主题为例，可以在 `[Blogroot]\themes\butterfly\source\css\` 目录下新建 custom.css 文件，然后在  `_config.butterfly.yml` 的 `inject` 配置项中引入自定义样式文件。
    
@@ -818,7 +818,7 @@ categories:
    [data-theme="dark"] .read-mode div#post {background: rgba(0, 0, 0, 0.5) !important;color: #ffffff;}
    ```
    
-# 主题升级
+## 主题升级
 
 进入 `[Blogroot]/themes` ，打开终端，输入：
 
