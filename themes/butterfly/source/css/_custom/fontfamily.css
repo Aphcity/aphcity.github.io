@@ -5,14 +5,20 @@
  */
 
 @font-face {
-  font-family: "FZFWZhuZiAYuanJD"; /* 方正FW筑紫A圆 简 D */
-  src: url("https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/fonts/FZFWZhuZiAYuanJD.OTF"); /* OTF 》 TTF */
+  font-family: "ZhuZiAWan"; /* FOT筑紫A丸 + Google Sans 简 D */
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/ZhuZiAWan.ttf"); /* OTF 》 TTF */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FZFWZhuZiAYuanJWD"; /* 方正FW筑紫A圆 简 D */
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FZFWZhuZiAYuanJWD.ttf"); /* OTF 》 TTF */
   font-display: swap;
 }
 
 @font-face {
   font-family: "FiraCode"; /* Fira Code */
-  src: url("https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/fonts/FiraCode-VF.ttf"); /* 字体文件路径 */
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FiraCode-VF.ttf"); /* 字体文件路径 */
   font-display: swap;
 }
 
@@ -23,10 +29,12 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3171217 */
   /* Color fonts */
-  src: 
-       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff2?t=1644314467450') format('woff2'),
-       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff?t=1644314467450') format('woff'),
-       url('//at.alicdn.com/t/font_3171217_f57xxzo6a6b.ttf?t=1644314467450') format('truetype');
+  src: url("//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff2?t=1644314467450")
+      format("woff2"),
+    url("//at.alicdn.com/t/font_3171217_f57xxzo6a6b.woff?t=1644314467450")
+      format("woff"),
+    url("//at.alicdn.com/t/font_3171217_f57xxzo6a6b.ttf?t=1644314467450")
+      format("truetype");
 }
 
 .iconfont {
