@@ -1,6 +1,7 @@
 ---
 title: Hexo + Butterfly 博客搭建日记
 katex: true
+cover: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
   - Hexo
 ---
