@@ -52,10 +52,10 @@ copy:
 social:
   # fab fa-github: https://github.com/xxxxx || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
-  fas fa-code || faa-tada: https://leetcode-cn.com/u/aphcity/ || icon-leetcode || faa-tada
-  fas fa-envelope || faa-tada: mailto:chalk.talisman@gmail.com || Gmail
-  fab fa-qq || faa-tada: tencent://message/?uin=1194634080&Site=&Menu=yes || QQ
-  fab fa-bilibili || faa-tada: https://space.bilibili.com/5175685 || Bilibili
+  iconfont icon-leetcode || fas faa-tada fa-4x: https://leetcode-cn.com/u/aphcity/ || Leetcode
+  iconfont icon-gmail || fas faa-tada: mailto:chalk.talisman@gmail.com || Gmail
+  iconfont icon-QQ || fas faa-tada: tencent://message/?uin=1194634080&Site=&Menu=yes || QQ
+  iconfont icon-bilibili || fas faa-tada: https://space.bilibili.com/5175685 || Bilibili
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
