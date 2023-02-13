@@ -37,12 +37,11 @@
 
 @font-face {
   font-family: "iconfont"; /* Project id 3171217 */
-  /* Color fonts */
-  src: url("//at.alicdn.com/t/c/font_3171217_4oz2t50qy1m.woff2?t=1675998686189")
+  src: url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.woff2?t=1676275649748")
       format("woff2"),
-    url("//at.alicdn.com/t/c/font_3171217_4oz2t50qy1m.woff?t=1675998686189")
+    url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.woff?t=1676275649748")
       format("woff"),
-    url("//at.alicdn.com/t/c/font_3171217_4oz2t50qy1m.ttf?t=1675998686189")
+    url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.ttf?t=1676275649748")
       format("truetype");
 }
 
@@ -54,8 +53,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-leetcode:before {
-  content: "\e60d";
+.icon-bilibili:before {
+  content: "\e75d";
 }
 
 .icon-gmail:before {
@@ -66,15 +65,36 @@
   content: "\e882";
 }
 
-.icon-netease-cloud-music-line:before {
+.icon-netease-cloud-music:before {
   content: "\e76a";
 }
 
-.icon-bilibili:before {
-  content: "\e66b";
+.icon-leetcode:before {
+  content: "\ebf2";
 }
 
 /* 卡片处小图标 */
 .social-icon .iconfont {
   font-size: 21px;
+  font-weight: normal;
+}
+
+.social-icon .icon-leetcode {
+  color: #ffa116;
+}
+
+.social-icon .icon-gmail {
+  color: #c53929;
+}
+
+.social-icon .icon-netease-cloud-music {
+  color: #d50000;
+}
+
+.social-icon .icon-QQ {
+  color: #23ade5;
+}
+
+.social-icon .icon-bilibili {
+  color: #fb7299;
 }

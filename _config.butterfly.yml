@@ -14,7 +14,6 @@ menu:
   # About: /about/ || fas fa-heart
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
-  # 标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   清单||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
@@ -1006,7 +1005,7 @@ gitcalendar:
   # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
   # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
   # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  color: "['rgba(139, 141, 145, 0.25)', '#9be9a8', '#8ddb9c', '#80ce8f', '#72c083', '#65b277', '#57a56a', '#4a975e', '#3c8952', '#2f7c45', '#216e39']" # 适配夜间模式的仿 GitHub 配色
+  color: "['rgba(128,128,128,0.15)', 'rgba(165,214,167,0.25)', 'rgba(165,214,167,0.5)', 'rgba(165,214,167,0.75)', 'rgba(129,199,132,0.75)', 'rgba(102,187,106,0.75)', 'rgba(76,175,80,0.75)', 'rgba(67,160,71,0.75)', 'rgba(56,142,60,0.75)', 'rgba(46,125,50,0.75)', 'rgba(27,94,32,0.75)']" # 适配夜间模式的仿 GitHub 配色
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.css
   gitcalendar_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.js
