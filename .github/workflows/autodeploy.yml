@@ -73,6 +73,10 @@ jobs:
         run: |
           hexo cinema -u
 
+      - name: 豆瓣页面获取
+        run: |
+          hexo douban -m
+
       - name: gulp 压缩
         run: |
           gulp

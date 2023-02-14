@@ -196,3 +196,14 @@ cinema: # 追剧设置
   extraOrder:
   extra_options:
     key: value
+
+douban:
+  id: 209213810
+  builtin: false
+  item_per_page: 10
+  movie:
+    path: movies/index.html
+    title: "影视清单"
+    quote: "闲下来，看看剧，忙起来，刷刷影"
+    option:
+  timeout: 10000
