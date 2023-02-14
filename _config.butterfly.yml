@@ -17,6 +17,7 @@ menu:
   分类: /categories/ || fas fa-folder-open
   清单||fa fa-heartbeat:
     音乐: /music/ || iconfont icon-music
+    番剧: /bangumis/ || iconfont icon-bilibili
     电影: /movies/ || iconfont icon-movies
     游戏: /games/ || iconfont icon-steam
   友链: /link/ || fas fa-link

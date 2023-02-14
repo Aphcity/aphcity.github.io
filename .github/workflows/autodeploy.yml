@@ -65,6 +65,14 @@ jobs:
         run: |
           hexo steam -u
 
+      - name: 追番页面获取
+        run: |
+          hexo bangumi -u
+
+      - name: 追剧页面获取
+        run: |
+          hexo cinema -u
+
       - name: gulp 压缩
         run: |
           gulp
