@@ -137,3 +137,18 @@ markdown:
 auto_category:
   enable: true
   depth:
+
+steam:
+  enable: true
+  steamId: "76561198840150578" #steam 64位Id
+  path: games/index.html
+  title: Steam游戏库
+  quote: "一个游戏重度患者的自我救赎"
+  tab: recent
+  length: 1000
+  imgUrl: "https://card.yuy1n.io/card/76561198840150578/dark,group,badge"
+  proxy:
+    host:
+    port:
+  extra_options:
+    key: value

@@ -1,8 +1,4 @@
-/* 
-
-    全局引入字体
-
- */
+/* 全局引入字体 */
 
 @font-face {
   font-family: "ZhuZiAWan"; /* FOT筑紫A丸 + Google Sans 简 D */
@@ -37,11 +33,11 @@
 
 @font-face {
   font-family: "iconfont"; /* Project id 3171217 */
-  src: url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.woff2?t=1676275649748")
+  src: url("//at.alicdn.com/t/c/font_3171217_qnk4zov2wvp.woff2?t=1676340705938")
       format("woff2"),
-    url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.woff?t=1676275649748")
+    url("//at.alicdn.com/t/c/font_3171217_qnk4zov2wvp.woff?t=1676340705938")
       format("woff"),
-    url("//at.alicdn.com/t/c/font_3171217_5qjxjbjttb.ttf?t=1676275649748")
+    url("//at.alicdn.com/t/c/font_3171217_qnk4zov2wvp.ttf?t=1676340705938")
       format("truetype");
 }
 
@@ -51,6 +47,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-music:before {
+  content: "\e733";
+}
+
+.icon-movies:before {
+  content: "\e8c4";
+}
+
+.icon-steam:before {
+  content: "\ec22";
 }
 
 .icon-bilibili:before {
@@ -73,7 +81,10 @@
   content: "\ebf2";
 }
 
-/* 卡片处小图标 */
+/* 
+    卡片处小图标  
+*/
+
 .social-icon .iconfont {
   font-size: 21px;
   font-weight: normal;
@@ -97,4 +108,17 @@
 
 .social-icon .icon-bilibili {
   color: #fb7299;
+}
+
+/* 
+    导航栏小图标  
+*/
+.menus_item_child .icon-music {
+  color: #fa243c;
+}
+.menus_item_child .icon-movies {
+  color: #2d963d;
+}
+.menus_item_child .icon-steam {
+  color: #23ade5;
 }
