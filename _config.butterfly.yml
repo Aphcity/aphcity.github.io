@@ -980,7 +980,7 @@ CDN:
     # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
-    # meting_js:
+    meting_js: https://pan.anzhiy.cn/d/anzhiyu/js/Meting2.min.js
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
