@@ -178,6 +178,8 @@ bangumi: # 追番设置
     port:
   extra_options:
     key: value
+    lazyload:
+      enable: false
 cinema: # 追剧设置
   enable: true
   path:

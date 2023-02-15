@@ -906,6 +906,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改 + 防止浏览器报错 because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checkin...
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/css/bangumis.css">
     # - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
 
   bottom:
