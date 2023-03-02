@@ -1040,8 +1040,8 @@ footer_beautify:
       shields: https://img.shields.io/badge/Frame-Hexo%206.3.0-blue?style=for-the-badge&logo=hexo #徽标API
       message: 博客框架为Hexo_v6.3.0 #徽标提示语
     - link: https://butterfly.js.org/
-      shields: https://img.shields.io/badge/Theme-Butterfly%204.6.1-6513df?style=for-the-badge&logo=bitdefender
-      message: 主题版本Butterfly_v4.6.1
+      shields: https://img.shields.io/badge/Theme-Butterfly%204.7.0-6513df?style=for-the-badge&logo=bitdefender
+      message: 主题版本Butterfly_v4.7.0
     - link: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/
       shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
       message: 本站使用JsDelivr为静态资源提供CDN加速
