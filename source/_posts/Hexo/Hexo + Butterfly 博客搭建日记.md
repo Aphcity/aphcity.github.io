@@ -2,7 +2,7 @@
 title: Hexo + Butterfly 博客搭建日记
 katex: true
 cover: >-
-  https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
+  https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
   - Hexo
 abbrlink: aef5367a
@@ -833,11 +833,11 @@ categories:
 
 之后打开 `Butterfly` 主题 `GitHub` [Release 页面](https://github.com/jerryc127/hexo-theme-butterfly/releases)
 
-![GitHub-Releases-版本对比](https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-版本对比.25253703rfmo.webp)
+![GitHub-Releases-版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-版本对比.25253703rfmo.webp)
 
 选择更新之前的版本，进入版本比对视图
 
 向下滚动找到 `_config.yml` 的对比视图，并根据其更改调整自己的主题配置文件 `_config.butterfly.yml`
 
-![GitHub-Releases-主题配置文件版本对比](https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-主题配置文件版本对比.965zj5g7z5w.webp)
+![GitHub-Releases-主题配置文件版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-主题配置文件版本对比.965zj5g7z5w.webp)
 
