@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
+                "file": "source/_posts/Hexo/hello-world.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
+                "file": "source/_posts/Hexo/hello-world.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
+                "file": "source/_posts/Hexo/hello-world.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md"
+                "file": "source/_posts/Hexo/hello-world.md"
               }
             }
           },
@@ -164,10 +164,10 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "bc88c68cb04c177e",
+  "active": "a98e74e53fbce1a4",
   "lastOpenFiles": [
-    "source/_posts/Hexo/hello-world.md",
     "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
+    "source/_posts/Hexo/hello-world.md",
     "source/_posts/GOOD.md",
     "scaffolds/post.md",
     "scaffolds/page.md",
