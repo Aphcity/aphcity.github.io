@@ -10,8 +10,8 @@ aside: false
 
 <head>
   <!-- require APlayer -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/aplayer/css/APlayer.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/aplayer/css/main.min.css">
+  <link rel="stylesheet" type="text/css" href="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/aplayer/css/APlayer.min.css">
+  <link rel="stylesheet" type="text/css" href="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/aplayer/css/main.min.css">
 </head>
 <body>
 <div id="music_bg"></div>
@@ -19,8 +19,8 @@ aside: false
   <meting-js id="2245723001" server="netease" type="playlist" mutex="true" preload="auto" order="random" volume="0.5"></meting-js>
 </div>
 <!-- require APlayer -->
-<script src="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/aplayer/js/APlayer.min.js"></script>
+<script src="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/aplayer/js/APlayer.min.js"></script>
 <!-- require MetingJS -->
-<script src="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/aplayer/js/Meting2.min.js"></script>
-<script async data-pjax src="https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/aplayer/js/main.min.js"></script>
+<script src="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/aplayer/js/Meting2.min.js"></script>
+<script async data-pjax src="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/aplayer/js/main.min.js"></script>
 </body>

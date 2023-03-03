@@ -2,7 +2,7 @@
 title: Hexo + Butterfly 博客搭建日记
 katex: true
 cover: >-
-  https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
+  https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
   - Hexo
 abbrlink: aef5367a
@@ -230,15 +230,15 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 ### 网站
 
-| 参数          | 描述                                                                                                   |
-|-------------|------------------------------------------------------------------------------------------------------|
-| `title`       | 网站标题                                                                                                 |
-| `subtitle`    | 网站副标题，告诉搜索引擎一个关于您站点的简单描述                                                                                                |
-| `description` | 网站描述                                                                                                 |
-| `keywords`    | 网站的关键词。支持多个关键词。                                                                                      |
-| `author`      | 您的名字                                                                                                 |
-| `language`    | 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。                            |
-| `timezone`    | 网站时区。Hexo 默认使用您电脑的时区。对于中国大陆地区可以使用 Asia/Shanghai。 |
+| 参数          | 描述                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`       | 网站标题                                                                                                                             |
+| `subtitle`    | 网站副标题，告诉搜索引擎一个关于您站点的简单描述                                                                                     |
+| `description` | 网站描述                                                                                                                             |
+| `keywords`    | 网站的关键词。支持多个关键词。                                                                                                       |
+| `author`      | 您的名字                                                                                                                             |
+| `language`    | 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。 |
+| `timezone`    | 网站时区。Hexo 默认使用您电脑的时区。对于中国大陆地区可以使用 Asia/Shanghai。                                                        |
 
 ``` yml
 title: Aphcity の 窝
@@ -252,12 +252,12 @@ timezone: "Asia/Shanghai"
 
 ### 网址
 
-| 参数                         | 描述                                                     | 默认值                       |
-|----------------------------|--------------------------------------------------------|---------------------------|
-| url                        | 网址, 必须以 http:// 或 https:// 开头                          |                           |
-| permalink                  | 文章的 永久链接 格式                                            | :year/:month/:day/:title/ |
-| permalink_defaults         | 永久链接中各部分的默认值                                           |                           |
-| pretty_urls.trailing_index | 是否在永久链接中保留尾部的 index.html，设置为 false 时去除                 | TRUE                      |
+| 参数                       | 描述                                                                            | 默认值                    |
+| -------------------------- | ------------------------------------------------------------------------------- | ------------------------- |
+| url                        | 网址, 必须以 http:// 或 https:// 开头                                           |                           |
+| permalink                  | 文章的 永久链接 格式                                                            | :year/:month/:day/:title/ |
+| permalink_defaults         | 永久链接中各部分的默认值                                                        |                           |
+| pretty_urls.trailing_index | 是否在永久链接中保留尾部的 index.html，设置为 false 时去除                      | TRUE                      |
 | pretty_urls.trailing_html  | 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效) | TRUE                      |
 
 ``` yml
@@ -283,10 +283,10 @@ ping aphcity.github.io
 
 <center>
 
-| 主机记录 | 类型    | 记录值               |
-|------|-------|-------------------|
-| @    | A     | ip                |
-| www  | CNAME | aphcity.github.io |
+| 主机记录 | 类型  | 记录值            |
+| -------- | ----- | ----------------- |
+| @        | A     | ip                |
+| www      | CNAME | aphcity.github.io |
 
 </center>
 
@@ -833,11 +833,11 @@ categories:
 
 之后打开 `Butterfly` 主题 `GitHub` [Release 页面](https://github.com/jerryc127/hexo-theme-butterfly/releases)
 
-![GitHub-Releases-版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-版本对比.25253703rfmo.webp)
+![GitHub-Releases-版本对比](https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-版本对比.25253703rfmo.webp)
 
 选择更新之前的版本，进入版本比对视图
 
 向下滚动找到 `_config.yml` 的对比视图，并根据其更改调整自己的主题配置文件 `_config.butterfly.yml`
 
-![GitHub-Releases-主题配置文件版本对比](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-主题配置文件版本对比.965zj5g7z5w.webp)
+![GitHub-Releases-主题配置文件版本对比](https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230206/GitHub-Releases-主题配置文件版本对比.965zj5g7z5w.webp)
 

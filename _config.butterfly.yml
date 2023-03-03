@@ -97,11 +97,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
+favicon: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
+  img: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
   effect: false
 
 # Disable all banner image
@@ -145,19 +145,19 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
+    - https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
+    - https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
-  post_page: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  flink: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  post_page: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: "Page Not Found"
-  background: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
+  background: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
 
 post_meta:
   page: # Home Page
@@ -227,10 +227,10 @@ reward:
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
+    - img: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
       link:
       text: 微信
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
+    - img: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
       link:
       text: 支付宝
 
@@ -546,7 +546,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
+background: url(https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
 
 # Footer Background
 footer_bg: true
@@ -672,7 +672,7 @@ preloader:
   # 2. pace (progress bar)
   source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/css/barber-shop.min.css
+  pace_css_url: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/css/barber-shop.min.css
 
 # aside (側邊欄)
 # --------------------------------------
@@ -1009,8 +1009,8 @@ gitcalendar:
   # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   color: "['rgba(128,128,128,0.15)', 'rgba(165,214,167,0.25)', 'rgba(165,214,167,0.5)', 'rgba(165,214,167,0.75)', 'rgba(129,199,132,0.75)', 'rgba(102,187,106,0.75)', 'rgba(76,175,80,0.75)', 'rgba(67,160,71,0.75)', 'rgba(56,142,60,0.75)', 'rgba(46,125,50,0.75)', 'rgba(27,94,32,0.75)']" # 适配夜间模式的仿 GitHub 配色
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.css
-  gitcalendar_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.js
+  gitcalendar_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.css
+  gitcalendar_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets/master/gitcalendar/gitcalendar.min.js
 
 # footer_beautify
 
@@ -1031,8 +1031,8 @@ footer_beautify:
     name: footer-wrap
     index: 0
   # 计时器部分配置项
-  runtime_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.js
-  runtime_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.css
+  runtime_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.js
+  runtime_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.css
   # 徽标部分配置项
   swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
@@ -1060,6 +1060,6 @@ footer_beautify:
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=for-the-badge&logo=Claris
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
-  swiper_css: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.css
-  swiper_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.js
-  swiperbdage_init_js: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiperbdage_init.min.js
+  swiper_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.css
+  swiper_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.js
+  swiperbdage_init_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiperbdage_init.min.js
