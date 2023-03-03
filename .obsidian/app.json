@@ -1,0 +1,23 @@
+{
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "zh-CN",
+    "en-US"
+  ],
+  "showFrontmatter": true,
+  "alwaysUpdateLinks": false,
+  "attachmentFolderPath": "source/img",
+  "showLineNumber": false,
+  "foldHeading": true,
+  "userIgnoreFilters": [
+    "node_modules/",
+    "public/",
+    "scaffolds/",
+    "themes/"
+  ],
+  "showUnsupportedFiles": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "source/_posts",
+  "showInlineTitle": true,
+  "strictLineBreaks": true
+}
