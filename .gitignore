@@ -10,4 +10,4 @@ _multiconfig.yml
 .deploy_git*/
 .idea
 themes/butterfly/.git
-.obsidian/workspace
+.obsidian/workspace.json

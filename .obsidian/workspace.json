@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Hexo/hello-world.md",
+                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,8 +64,17 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "3fb358f0e0354e9c",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Hexo/hello-world.md",
+                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Hexo/hello-world.md",
+                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Hexo/hello-world.md"
+                "file": "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md"
               }
             }
           },
@@ -138,7 +147,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -151,13 +160,14 @@
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "a98e74e53fbce1a4",
+  "active": "bc88c68cb04c177e",
   "lastOpenFiles": [
-    "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
     "source/_posts/Hexo/hello-world.md",
+    "source/_posts/Hexo/Hexo + Butterfly 博客搭建日记.md",
     "source/_posts/GOOD.md",
     "scaffolds/post.md",
     "scaffolds/page.md",
