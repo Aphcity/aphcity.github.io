@@ -19,7 +19,7 @@
     "hexo-admin": "^2.3.0",
     "hexo-algoliasearch": "^1.0.0",
     "hexo-auto-category": "^0.2.1",
-    "hexo-bilibili-bangumi": "^1.8.5",
+    "hexo-bilibili-bangumi": "^1.8.6",
     "hexo-butterfly-footer-beautify": "^1.0.6",
     "hexo-deployer-git": "^4.0.0",
     "hexo-douban": "^2.1.7",
