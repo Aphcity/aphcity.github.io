@@ -4,12 +4,12 @@ katex: true
 cover: >-
   https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
-  - Hexo
+  - 教程
 tags:
   - Hexo
 abbrlink: aef5367a
-date: 2022/12/30 10:44:25
-updated: 2023/06/21 22:46:37
+date: '2022/12/30 10:44:25'
+updated: '2023/06/21 22:46:37'
 ---
 
 > 全记录，旨在能够找到回家的路。

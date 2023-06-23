@@ -1,13 +1,16 @@
 ---
 title: Clash For Windows 使用全教程
-date: 2023-06-21 22:49:07
 katex: false
 cover: >-
   https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230621/Clash-Cover.71yhx8jsqmw0.webp
 tags:
   - Clash
   - 机场
-updated: 2023/06/21 23:46:34
+updated: '2023/06/21 23:46:34'
+categories:
+  - 教程
+abbrlink: 9493c649
+date: 2023-06-21 22:49:07
 ---
 
 > 心血来潮，因为好像最近的家人们有很多想要自己独立科学上网的，为了玩的，为了学的，为了看的，有点多，统一省事，也给博客加点养分，整理一下，也能有人再来问，能当甩手掌柜，以后直接用😝
