@@ -289,7 +289,7 @@ aside:
   card_post_series:
     enable: true
     series_title: false # The title shows the series name
-    orderBy: 'date' # Order by title or date
+    orderBy: "date" # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 
 # busuanzi count for PV / UV in site
@@ -712,7 +712,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -825,7 +825,7 @@ fancybox: true
 # series (系列文章)
 series:
   enable: true
-  orderBy: 'title' # Order by title or date
+  orderBy: "title" # Order by title or date
   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
   number: true
 
@@ -1022,7 +1022,7 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
-    
+
 gitcalendar:
   enable: true # 开关
   priority: 5 #过滤器优先权
@@ -1071,8 +1071,8 @@ footer_beautify:
   swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
     - link: https://hexo.io/ #徽标指向网站链接
-      shields: https://img.shields.io/badge/Frame-Hexo%206.3.0-blue?style=for-the-badge&logo=hexo #徽标API
-      message: 博客框架为Hexo_v6.3.0 #徽标提示语
+      shields: https://img.shields.io/badge/Frame-Hexo%207.1.1-blue?style=for-the-badge&logo=hexo #徽标API
+      message: 博客框架为Hexo_v7.1.1 #徽标提示语
     - link: https://butterfly.js.org/
       shields: https://img.shields.io/badge/Theme-Butterfly%204.13.0-6513df?style=for-the-badge&logo=bitdefender
       message: 主题版本Butterfly_v4.13.0

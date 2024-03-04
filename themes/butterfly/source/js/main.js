@@ -399,13 +399,7 @@ document.addEventListener('DOMContentLoaded', function () {
             isChatBtn && window.chatBtn.show()
             flag = 'up'
           }
-        } else {
-          if (flag !== 'up') {
-            $header.classList.add('nav-visible')
-            isChatBtn && window.chatBtn.show()
-            flag = 'up'
->>>>>>> upstream/master
-        }
+        } 
       } else {
         flag = ''
         if (currentTop === 0) {
