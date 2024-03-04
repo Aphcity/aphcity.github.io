@@ -1,9 +1,6 @@
 {
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "zh-CN",
-    "en-US"
-  ],
+  "spellcheckLanguages": null,
   "showFrontmatter": true,
   "alwaysUpdateLinks": false,
   "attachmentFolderPath": "source/img",

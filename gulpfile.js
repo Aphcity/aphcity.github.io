@@ -7,15 +7,14 @@ var fontmin = require("gulp-fontmin");
 // gulp-tester
 var terser = require("gulp-terser");
 // 压缩js
-gulp.task("compress", async (done) => {
-  gulp
+gulp.task("compress", function () {
+  return gulp
     .src(["./public/**/*.js", "!./public/**/*.min.js"])
     .pipe(terser())
     .pipe(gulp.dest("./public"));
-  done();
 });
 //压缩css
-gulp.task("minify-css", () => {
+gulp.task("minify-css", function () {
   return gulp
     .src(["./public/**/*.css"])
     .pipe(
@@ -26,7 +25,7 @@ gulp.task("minify-css", () => {
     .pipe(gulp.dest("./public"));
 });
 //压缩html
-gulp.task("minify-html", () => {
+gulp.task("minify-html", function () {
   return gulp
     .src("./public/**/*.html")
     .pipe(htmlclean())
@@ -62,7 +61,7 @@ function minifyFont(text, cb) {
     .on("end", cb);
 }
 
-gulp.task("mini-font", (cb) => {
+gulp.task("mini-font", function (cb) {
   var buffers = [];
   gulp
     .src(["./public/**/*.html"]) //HTML文件所在目录请根据自身情况修改
@@ -77,5 +76,14 @@ gulp.task("mini-font", (cb) => {
 // 运行gulp命令时依次执行以下任务
 gulp.task(
   "default",
-  gulp.parallel("compress", "minify-css", "minify-html", "mini-font")
+  gulp.series(
+    "compress",
+    "minify-css",
+    "minify-html",
+    "mini-font",
+    function (done) {
+      // Signal completion when all tasks are done
+      done();
+    }
+  )
 );
