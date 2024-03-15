@@ -18,7 +18,7 @@
     "hexo-abbrlink": "^2.2.1",
     "hexo-admin": "^2.3.0",
     "hexo-algoliasearch": "^2.0.1",
-    "hexo-auto-category": "^0.2.1",
+    "hexo-auto-category": "^0.2.2",
     "hexo-bilibili-bangumi": "^1.8.9",
     "hexo-butterfly-footer-beautify": "^1.0.6",
     "hexo-deployer-git": "^4.0.0",
