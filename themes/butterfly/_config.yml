@@ -18,25 +18,15 @@ menu:
   #   Movie: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
-  首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  分类: /categories/ || fas fa-folder-open
-  清单||fa fa-heartbeat:
-    音乐: /music/ || iconfont icon-music
-    番剧: /bangumis/ || iconfont icon-bilibili
-    电影: /movies/ || iconfont icon-movies
-    游戏: /games/ || iconfont icon-steam
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 200 # unit: px
+highlight_height_limit: false # unit: px
 code_word_wrap: false
 
 # Social Settings (社交圖標設置)
@@ -45,20 +35,16 @@ code_word_wrap: false
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-  iconfont icon-leetcode || fas faa-tada: https://leetcode-cn.com/u/aphcity/ || Leetcode
-  iconfont icon-gmail || fas faa-tada: mailto:chalk.talisman@gmail.com || Gmail
-  iconfont icon-QQ || fas faa-tada: tencent://message/?uin=1194634080&Site=&Menu=yes || QQ
-  iconfont icon-bilibili || fas faa-tada: https://space.bilibili.com/5175685 || Bilibili
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
+favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
+  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
   effect: false
 
 # Disable all banner image
@@ -68,7 +54,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: transparent
+default_top_img:
 
 # The banner image of archive page
 archive_img:
@@ -102,23 +88,21 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
-  post_page: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  flink: /img/friend_404.gif
+  post_page: /img/404.jpg
 
 # A simple 404 page
 error_404:
-  enable: true
-  subtitle: "Page Not Found"
-  background: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
+  enable: false
+  subtitle: 'Page Not Found'
+  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
-    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
@@ -127,7 +111,7 @@ post_meta:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
-    tags: false # true or false 文章頁是否顯示標籤
+    tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
 
 # Display the article introduction on homepage
@@ -141,21 +125,20 @@ index_post_content:
 
 # anchor
 anchor:
-  button:
-    enable: false
-    always_show: false
-    icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  # when you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
 
 # figcaption (圖片描述文字)
-photofigcaption: true
+photofigcaption: false
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
   copyright:
-    enable: true
+    enable: false
     limit_count: 50
 
 # Post
@@ -166,13 +149,13 @@ toc:
   post: true
   page: false
   number: true
-  expand: true
+  expand: false
   style_simple: false # for post
   scroll_percent: true
 
 post_copyright:
   enable: true
-  decode: true
+  decode: false
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -180,6 +163,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: false
+  text:
   QR_code:
     # - img: /img/wechat.jpg
     #   link:
@@ -187,12 +171,6 @@ reward:
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
-      link:
-      text: 微信
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
-      link:
-      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -217,20 +195,20 @@ post_pagination: 1
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: true
+  enable: false
   style: flat # style: simple/flat
-  limit_day: 100 # When will it be shown
+  limit_day: 500 # When will it be shown
   position: top # position: top/bottom
-  message_prev: 本文上次更新已有
-  message_next: 天, 文章内容可能已经过期。
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
 
 # Footer Settings
 # --------------------------------------
 footer:
   owner:
     enable: true
-    since: 2022
-  custom_text: Hi, welcome to my <a href="https://aphcity.top/">blog</a>!
+    since: 2020
+  custom_text:
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -244,7 +222,7 @@ aside:
   position: right # left or right
   display:
     archive: true
-    tag: false
+    tag: true
     category: true
   card_author:
     enable: true
@@ -252,15 +230,15 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me On GitHub
-      link: https://github.com/Aphcity
+      text: Follow Me
+      link: https://github.com/xxxxxx
   card_announcement:
     enable: true
-    content: <div align="center">耽误太多时间<br />事情可就做不完了<br />劳逸结合是不错<br />但也别放松过头<br />无论是冒险还是做生意<br />机会都稍纵即逝</div>
+    content: This is my Blog
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
-    sort: updated # date or updated
+    sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
@@ -268,16 +246,16 @@ aside:
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
-    enable: false
+    enable: true
     limit: 40 # if set 0 will show all
-    color: true
+    color: false
     orderby: random # Order of tags, random/name/length
     order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
     type: monthly # yearly or monthly
-    format: YYYY年MM月 # eg: YYYY年MM月
+    format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
@@ -286,6 +264,11 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+  card_post_series:
+    enable: true
+    series_title: false # The title shows the series name
+    orderBy: 'date' # Order by title or date
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -297,14 +280,14 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: true
-  publish_date: 02/08/2022 00:00:00
+  enable: false
+  publish_date:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
-  limit: 5
+  limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
 
@@ -313,7 +296,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -321,9 +304,9 @@ translate:
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: "繁"
+  msgToTraditionalChinese: '繁'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: "簡"
+  msgToSimplifiedChinese: '簡'
 
 # Read Mode (閲讀模式)
 readmode: true
@@ -337,7 +320,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 1
+  autoChangeMode: false
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start: # 8
   end: # 22
@@ -377,7 +360,7 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
 
@@ -403,16 +386,10 @@ docsearch:
 # Share System (分享)
 # --------------------------------------
 
-# AddThis
-# https://www.addthis.com/
-addThis:
-  enable: false
-  pubid: ra-620330f41b9b3409
-
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: false
+  enable: true
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -427,13 +404,13 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo # Valine,Disqus
+  use: # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: true # Display comment count in post's top_img
-  card_post_count: true # Display comment count in Home Page
+  count: false # Display comment count in post's top_img
+  card_post_count: false # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
@@ -505,7 +482,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.aphcity.cyou/
+  envId:
   region:
   visitor: false
   option:
@@ -541,7 +518,7 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -555,8 +532,8 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: true
-  public_key: p5b4fg82qznkmyhyhuyfuel0prpw3dgn
+  enable: false
+  public_key:
 
 # daovoice
 # http://dashboard.daovoice.io/app
@@ -594,7 +571,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: ajtve8wn5a
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -621,8 +598,6 @@ site_verification:
   #   content: xxxxxx
   # - name: baidu-site-verification
   #   content: xxxxxxx
-  - name: baidu-site-verification
-    content: code-rOvrAtQ9uZ
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -630,21 +605,21 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-theme_color:
-  enable: true
-  main: "#424153" #主题色
-  paginator: "#cccccc" #页码
-  button_hover: "#a1bad0" #按钮变色
-  text_selection: "#F47466" #文本选择
-  link_color: "#99a9bf" #链接文字
-  meta_color: "#858585"
-  hr_color: "#99a9bf"
-  code_foreground: "#F47466"
-  code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#999999" #目录激活颜色
-  blockquote_padding_color: "#424153"
-  blockquote_background_color: "#424153"
-  scrollbar_color: "#999999"
+# theme_color:
+#   enable: true
+#   main: "#49B1F5"
+#   paginator: "#00c4b6"
+#   button_hover: "#FF7242"
+#   text_selection: "#00c4b6"
+#   link_color: "#99a9bf"
+#   meta_color: "#858585"
+#   hr_color: "#A4D8FA"
+#   code_foreground: "#F47466"
+#   code_background: "rgba(27, 31, 35, .05)"
+#   toc_color: "#00c4b6"
+#   blockquote_padding_color: "#49b1f5"
+#   blockquote_background_color: "#49b1f5"
+#   scrollbar_color: "#49b1f5"
 #   meta_theme_color_light: "ffffff"
 #   meta_theme_color_dark: "#0d0d0d"
 
@@ -661,13 +636,16 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
+# Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
+text_align_justify: false
+
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
+background:
 
 # Footer Background
-footer_bg: true
+footer_bg: false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -675,7 +653,7 @@ mask:
   footer: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
-rightside-bottom: 100px
+rightside_bottom:
 
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: true
@@ -683,7 +661,7 @@ enter_transitions: true
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖動特效)
   mobile: false
@@ -710,7 +688,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -718,9 +696,9 @@ canvas_nest:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
-  mobile: true
+  mobile: false
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
@@ -728,7 +706,7 @@ click_heart:
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
-ClickShowText:
+clickShowText:
   enable: false
   text:
     # - I
@@ -740,11 +718,11 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: true
+  enable: false
   field: post # site/post
   title-prefix-icon: # '\f0c1'
   title-prefix-icon-color: # '#F47466'
@@ -752,10 +730,10 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 16px
-  code-font-size: 16px
-  font-family: ZhuZiAWan, FZFWZhuZiAYuanJWD, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-  code-font-family: FiraCode, ZhuZiAWan, FZFWZhuZiAYuanJWD, consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  global-font-size:
+  code-font-size:
+  font-family:
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -771,7 +749,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: true
+  enable: false
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
@@ -783,24 +761,24 @@ subtitle:
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 3
+  source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: true
+  enable: false
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 2
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/css/barber-shop.min.css
+  pace_css_url:
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: true
+  enable: false
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -819,6 +797,13 @@ fancybox: true
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
+
+# series (系列文章)
+series:
+  enable: true
+  orderBy: 'title' # Order by title or date
+  order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  number: true
 
 # abcjs (樂譜渲染)
 # See https://github.com/paulrosen/abcjs
@@ -871,25 +856,25 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
-  bg_light: "#424153" # The background color of Toast Notification in light mode
-  bg_dark: "#99a9bf" # The background color of Toast Notification in dark mode
+  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: true
+  enable: false
   field: site # site/post
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: true
+  enable: false
   field: site # site/post
   placeholder:
   blur: false
@@ -927,14 +912,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link href="/css/custom.css"  media="defer" onload="this.media='all'"> # 主题魔改 + 防止浏览器报错 because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checkin...
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/css/bangumis.css">
-    # - <script src="/js/fairyDustCursor.js"></script> # 鼠标跟踪雪花效果
-
   bottom:
     # - <script src="xxxx"></script>
-    - <script async src="/js/grayscale.js"></script> # 站点公祭日自动变灰
-    # - <script async src="/js/iconfont.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -951,141 +930,65 @@ CDN:
   third_party_provider: jsdelivr
 
   # Add version number to url, true or false
-  version: false
+  version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
 
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
+    # abcjs_basic_js:
+    # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # instantsearch:
-    # docsearch_js:
-    # docsearch_css:
-    # pjax:
-    # gitalk:
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # giscus:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css:
-    # fancybox:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    # fontawesome:
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
-    meting_js: https://pan.anzhiy.cn/d/anzhiyu/js/Meting2.min.js
+    # artalk_css:
+    # artalk_js:
+    # blueimp_md5:
+    # busuanzi:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # canvas_ribbon:
+    # click_heart:
+    # clickShowText:
+    # disqusjs:
+    # disqusjs_css:
+    # docsearch_css:
+    # docsearch_js:
+    # egjs_infinitegrid:
+    # fancybox:
+    # fancybox_css:
+    # fireworks:
+    # fontawesome:
+    # gitalk:
+    # gitalk_css:
+    # giscus:
+    # instantpage:
+    # instantsearch:
+    # katex:
+    # katex_copytex:
+    # lazyload:
+    # local_search:
+    # main:
+    # main_css:
+    # mathjax:
+    # medium_zoom:
+    # mermaid:
+    # meting_js:
+    # pangu:
+    # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    # artalk_js:
-    # artalk_css:
-    # busuanzi:
-    # abcjs_basic_js:
-
-gitcalendar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  # butterfly挂载容器
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  user: Aphcity #git用户名
-  apiurl: "https://gitcalendar.aphcity.cyou"
-  minheight:
-    pc: 280px #桌面端最小高度
-    mobile: 100px #移动端最小高度
-  # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  color: "['rgba(128,128,128,0.15)', 'rgba(165,214,167,0.25)', 'rgba(165,214,167,0.5)', 'rgba(165,214,167,0.75)', 'rgba(129,199,132,0.75)', 'rgba(102,187,106,0.75)', 'rgba(76,175,80,0.75)', 'rgba(67,160,71,0.75)', 'rgba(56,142,60,0.75)', 'rgba(46,125,50,0.75)', 'rgba(27,94,32,0.75)']" # 适配夜间模式的仿 GitHub 配色
-  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/gitcalendar/gitcalendar.min.css
-  gitcalendar_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/gitcalendar/gitcalendar.min.js
-
-# footer_beautify
-
-# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
-# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
-footer_beautify:
-  enable:
-    timer: true # 计时器开关
-    bdage: true # 徽标开关
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  exclude:
-    # 屏蔽页面
-    # - /posts/
-    # - /about/
-  layout: # 挂载容器类型
-    type: id
-    name: footer-wrap
-    index: 0
-  # 计时器部分配置项
-  runtime_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.js
-  runtime_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/runtime.min.css
-  # 徽标部分配置项
-  swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
-  bdageitem:
-    - link: https://hexo.io/ #徽标指向网站链接
-      shields: https://img.shields.io/badge/Frame-Hexo%206.3.0-blue?style=for-the-badge&logo=hexo #徽标API
-      message: 博客框架为Hexo_v6.3.0 #徽标提示语
-    - link: https://butterfly.js.org/
-      shields: https://img.shields.io/badge/Theme-Butterfly%204.7.0-6513df?style=for-the-badge&logo=bitdefender
-      message: 主题版本Butterfly_v4.7.0
-    - link: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/
-      shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
-      message: 本站使用JsDelivr为静态资源提供CDN加速
-    # - link: https://vercel.com/
-    #   shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=for-the-badge&logo=Vercel
-    #   message: 本站采用双线部署，默认线路托管于Vercel
-    # - link: https://vercel.com/
-    #   shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=for-the-badge&logo=Codio
-    #   message: 本站采用双线部署，联通线路托管于Coding
-    - link: https://github.com/Aphcity/aphcity.github.io
-      shields: https://img.shields.io/badge/Source-Github-d021d6?style=for-the-badge&logo=GitHub
-      message: 本站项目由Github托管
-    - link: https://cloudflare.com/
-      shields: https://img.shields.io/badge/DNS-cloudflare-%23F38020?style=for-the-badge&logo=cloudflare
-      message: 本站解析由CloudFlare托管
-    - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=for-the-badge&logo=Claris
-      message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
-  swiper_css: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.css
-  swiper_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiper.min.js
-  swiperbdage_init_js: https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/hexo-butterfly-footer-beautify/swiperbdage_init.min.js
+    # pjax:
+    # sharejs:
+    # sharejs_css:
+    # snackbar:
+    # snackbar_css:
+    # translate:
+    # twikoo:
+    # typed:
+    # utils:
+    # valine:
+    # waline_css:
+    # waline_js:

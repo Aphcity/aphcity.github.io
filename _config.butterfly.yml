@@ -54,11 +54,11 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
+favicon: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230208/favicon.7dgu18dp3g40.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
+  img: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/avatar.41wodp43fr40.webp
   effect: false
 
 # Disable all banner image
@@ -102,19 +102,19 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
-    - https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
+    - https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/default-cover.2q5oxoasyv00.webp
+    - https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/default-cover.na8nqf8mxog.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
-  post_page: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  flink: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
+  post_page: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/friend_404.3e077lca8260.gif
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: "Page Not Found"
-  background: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
+  background: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/404.1scvhc1m7gzk.gif
 
 post_meta:
   page: # Home Page
@@ -141,11 +141,10 @@ index_post_content:
 
 # anchor
 anchor:
-  button:
-    enable: false
-    always_show: false
-    icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  # when you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
 
 # figcaption (圖片描述文字)
 photofigcaption: true
@@ -180,6 +179,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: false
+  text:
   QR_code:
     # - img: /img/wechat.jpg
     #   link:
@@ -187,10 +187,10 @@ reward:
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
+    - img: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/wechat.5w1tylfe8ns0.webp
       link:
       text: 微信
-    - img: https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
+    - img: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/alipay.3t2tk1d3s10.webp
       link:
       text: 支付宝
 
@@ -219,7 +219,7 @@ post_pagination: 1
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
-  limit_day: 100 # When will it be shown
+  limit_day: 150 # When will it be shown
   position: top # position: top/bottom
   message_prev: 本文上次更新已有
   message_next: 天, 文章内容可能已经过期。
@@ -286,6 +286,11 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+  card_post_series:
+    enable: true
+    series_title: false # The title shows the series name
+    orderBy: "date" # Order by title or date
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -402,12 +407,6 @@ docsearch:
 
 # Share System (分享)
 # --------------------------------------
-
-# AddThis
-# https://www.addthis.com/
-addThis:
-  enable: false
-  pubid: ra-620330f41b9b3409
 
 # Share.js
 # https://github.com/overtrue/share.js
@@ -635,11 +634,11 @@ theme_color:
   main: "#424153" #主题色
   paginator: "#cccccc" #页码
   button_hover: "#a1bad0" #按钮变色
-  text_selection: "#F47466" #文本选择
-  link_color: "#99a9bf" #链接文字
+  text_selection: "rgba(121, 85, 72, .7)" #文本选择
+  link_color: "#f56c6c" #链接文字
   meta_color: "#858585"
   hr_color: "#99a9bf"
-  code_foreground: "#F47466"
+  code_foreground: "#5cb85c"
   code_background: "rgba(27, 31, 35, .05)"
   toc_color: "#999999" #目录激活颜色
   blockquote_padding_color: "#424153"
@@ -661,10 +660,13 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
+# Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
+text_align_justify: false
+
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
+background: url(https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20221231/background-default.webp)
 
 # Footer Background
 footer_bg: true
@@ -728,7 +730,7 @@ click_heart:
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
-ClickShowText:
+clickShowText:
   enable: false
   text:
     # - I
@@ -819,6 +821,13 @@ fancybox: true
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
+
+# series (系列文章)
+series:
+  enable: true
+  orderBy: "title" # Order by title or date
+  order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  number: true
 
 # abcjs (樂譜渲染)
 # See https://github.com/paulrosen/abcjs
@@ -958,62 +967,61 @@ CDN:
   custom_format:
 
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
+    # abcjs_basic_js:
+    # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # instantsearch:
-    # docsearch_js:
-    # docsearch_css:
-    # pjax:
-    # gitalk:
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # giscus:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css:
-    # fancybox:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    # fontawesome:
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
+    # artalk_css:
+    # artalk_js:
+    # blueimp_md5:
+    # busuanzi:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # canvas_ribbon:
+    # click_heart:
+    # clickShowText:
+    # disqusjs:
+    # disqusjs_css:
+    # docsearch_css:
+    # docsearch_js:
+    # egjs_infinitegrid:
+    # fancybox:
+    # fancybox_css:
+    # fireworks:
+    # fontawesome:
+    # gitalk:
+    # gitalk_css:
+    # giscus:
+    # instantpage:
+    # instantsearch:
+    # katex:
+    # katex_copytex:
+    # lazyload:
+    # local_search:
+    # main:
+    # main_css:
+    # mathjax:
+    # medium_zoom:
+    # mermaid:
     meting_js: https://pan.anzhiy.cn/d/anzhiyu/js/Meting2.min.js
+    # pangu:
+    # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    # artalk_js:
-    # artalk_css:
-    # busuanzi:
-    # abcjs_basic_js:
+    # pjax:
+    # sharejs:
+    # sharejs_css:
+    # snackbar:
+    # snackbar_css:
+    # translate:
+    # twikoo:
+    # typed:
+    # utils:
+    # valine:
+    # waline_css:
+    # waline_js:
 
 gitcalendar:
   enable: true # 开关
@@ -1063,11 +1071,11 @@ footer_beautify:
   swiperpara: 3 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
     - link: https://hexo.io/ #徽标指向网站链接
-      shields: https://img.shields.io/badge/Frame-Hexo%206.3.0-blue?style=for-the-badge&logo=hexo #徽标API
-      message: 博客框架为Hexo_v6.3.0 #徽标提示语
+      shields: https://img.shields.io/badge/Frame-Hexo%207.1.1-blue?style=for-the-badge&logo=hexo #徽标API
+      message: 博客框架为Hexo_v7.1.1 #徽标提示语
     - link: https://butterfly.js.org/
-      shields: https://img.shields.io/badge/Theme-Butterfly%204.9.0-6513df?style=for-the-badge&logo=bitdefender
-      message: 主题版本Butterfly_v4.9.0
+      shields: https://img.shields.io/badge/Theme-Butterfly%204.13.0-6513df?style=for-the-badge&logo=bitdefender
+      message: 主题版本Butterfly_v4.13.0
     - link: https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/
       shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=for-the-badge&logo=jsDelivr
       message: 本站使用JsDelivr为静态资源提供CDN加速

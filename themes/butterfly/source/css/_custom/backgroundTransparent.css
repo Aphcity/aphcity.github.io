@@ -5,6 +5,13 @@
         
 */
 
+#page-header #post-info {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item {
   background: rgba(255, 255, 255, 0.85);

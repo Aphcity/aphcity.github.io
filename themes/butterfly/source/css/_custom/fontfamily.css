@@ -2,27 +2,27 @@
 
 @font-face {
   font-family: "ZhuZiAWan"; /* FOT筑紫A丸 + Google Sans 简 D */
-  src: url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/ZhuZiAWan.woff")
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/ZhuZiAWan.woff")
       format("woff"),
-    url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/ZhuZiAWan.ttf")
+    url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/ZhuZiAWan.ttf")
       format("truetype"); /* 字体文件路径 */
   font-display: swap;
 }
 
 @font-face {
   font-family: "FZFWZhuZiAYuanJWD"; /* 方正FW筑紫A圆 简 D */
-  src: url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FZFWZhuZiAYuanJWD.woff")
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FZFWZhuZiAYuanJWD.woff")
       format("woff"),
-    url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FZFWZhuZiAYuanJWD.ttf")
+    url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FZFWZhuZiAYuanJWD.ttf")
       format("truetype"); /* 字体文件路径 */
   font-display: swap;
 }
 
 @font-face {
   font-family: "FiraCode"; /* Fira Code */
-  src: url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FiraCode-VF.woff")
+  src: url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FiraCode-VF.woff")
       format("woff"),
-    url("https://cdn.staticaly.com/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FiraCode-VF.ttf")
+    url("https://cdn.statically.io/gh/Aphcity/aphcity.github.io@gh-page/fontsdest/FiraCode-VF.ttf")
       format("truetype"); /* 字体文件路径 */
   font-display: swap;
 }

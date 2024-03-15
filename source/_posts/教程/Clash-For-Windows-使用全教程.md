@@ -2,7 +2,7 @@
 title: Clash For Windows 使用全教程
 katex: false
 cover: >-
-  https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230621/Clash-Cover.71yhx8jsqmw0.webp
+  https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230621/Clash-Cover.71yhx8jsqmw0.webp
 tags:
   - Clash
   - 机场
@@ -36,37 +36,37 @@ date: 2023-06-21 22:49:07
 **Clash for Windows** 官网下载地址：[GitHub Releases](https://github.com/Fndroid/clash_for_windows_pkg/releases)
 新手使用建议下载稳定版本，即版本号后标记为 `Latest` 的版本。
 
-![Clash-GitHub-Release](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230621/Clash-GitHub-Release.hyq7qmc1zg8.webp)
+![Clash-GitHub-Release](https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230621/Clash-GitHub-Release.hyq7qmc1zg8.webp)
 
 本文编辑时为上图所示，根据本身系统及CPU架构选择下载的文件，一般而言，对于 家用 的 64位 Windows 操作系统，选择 `Clash.for.Windows.Setup.**.**.**.exe` 下载即可
 
-| 文件名                                         | 说明                     |
-|---------------------------------------------|------------------------|
+| 文件名                                       | 说明                         |
+| -------------------------------------------- | ---------------------------- |
 | Clash.for.Windows-0.20.27-arm64-linux.tar.gz | Linux ARM 64位 版本 压缩包   |
 | Clash.for.Windows-0.20.27-arm64-mac.7z       | Mac ARM 64位 版本 压缩包     |
 | Clash.for.Windows-0.20.27-arm64-win.7z       | Windows ARM 64位 版本 压缩包 |
-| Clash.for.Windows-0.20.27-arm64.dmg          | Mac ARM 64位 版本 安装包        |
+| Clash.for.Windows-0.20.27-arm64.dmg          | Mac ARM 64位 版本 安装包     |
 | Clash.for.Windows-0.20.27-ia32-win.7z        | Windows 32位 版本 压缩包     |
 | Clash.for.Windows-0.20.27-mac.7z             | Mac 64位 版本 压缩包         |
 | Clash.for.Windows-0.20.27-win.7z             | Windows 64位 版本 压缩包     |
 | Clash.for.Windows-0.20.27-x64-linux.tar.gz   | Linux 64位 版本 压缩包       |
-| Clash.for.Windows-0.20.27.dmg                | Mac 64位 版本 安装包            |
-| Clash.for.Windows.Setup.0.20.27.arm64.exe    | Windows ARM 64位 版本 安装包    |
-| Clash.for.Windows.Setup.0.20.27.exe          | Windows 64位 版本 安装包        |
-| Clash.for.Windows.Setup.0.20.27.ia32.exe     | Windows 32位 版本 安装包        |
-| sha256sum                                   | 检测文件完整性的命令             |
-| Source code (zip)                           | 源文件压缩包 zip 版本          |
-| Source code (tar.gz)                        | 源文件压缩包 tar.gz 版本       |
+| Clash.for.Windows-0.20.27.dmg                | Mac 64位 版本 安装包         |
+| Clash.for.Windows.Setup.0.20.27.arm64.exe    | Windows ARM 64位 版本 安装包 |
+| Clash.for.Windows.Setup.0.20.27.exe          | Windows 64位 版本 安装包     |
+| Clash.for.Windows.Setup.0.20.27.ia32.exe     | Windows 32位 版本 安装包     |
+| sha256sum                                    | 检测文件完整性的命令         |
+| Source code (zip)                            | 源文件压缩包 zip 版本        |
+| Source code (tar.gz)                         | 源文件压缩包 tar.gz 版本     |
 
 下载完成后，打开进行安装。
 
 ## 使用
 
-![Clash-Profiles](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230621/Clash-Profiles.5ixsnkb2fn40.webp)
+![Clash-Profiles](https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230621/Clash-Profiles.5ixsnkb2fn40.webp)
 
 安装完成，首先跳转至 `Profiles` 选项卡下，点击 `Download` 左侧的文本框，或点击框内的粘贴图标，将先前准备好的 `订阅链接` 复制到文本框内，之后点击 `Download` 即可将 `订阅` 导入到 `Clash For Windows` 中。
 
-![Clash-General](https://cdn.staticaly.com/gh/Aphcity/aphcity-assets@master/20230621/Clash-General.5cp3n114zz00.webp)
+![Clash-General](https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230621/Clash-General.5cp3n114zz00.webp)
 
 之后，打开主界面，应当与上图大体一致，并且建议将面板勾选至与上述一致。具体选项会在之后介绍。
 

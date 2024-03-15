@@ -140,7 +140,13 @@ auto_category:
 
 steam:
   enable: true
-  steamId: "76561198840150578" #steam 64位Id
+  steamId: '76561198840150578' #steam 64位Id
+  apiKey: 'B39468B3C97978E517A6E2B55CA3AC92' #steam api key
+  steamInfos: # 多账号配置
+    - id: '76561198840150578' #steam 64位Id
+      path: # 为每个帐号游戏库单独配置页面路径，默认`steamgames/{steamId}/index.html`
+    - id: '*****'
+  freeGames: true
   path: games/index.html
   title: Steam游戏库
   quote: "一个游戏重度患者的自我救赎"
