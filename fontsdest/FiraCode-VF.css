@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Fira Code Light";
+    src: url("FiraCode-VF.eot"); /* IE9 */
+    src: url("FiraCode-VF.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("FiraCode-VF.woff2") format("woff2"), /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+    url("FiraCode-VF.woff") format("woff"), /* chrome, firefox */
+    url("FiraCode-VF.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("FiraCode-VF.svg#Fira Code Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
