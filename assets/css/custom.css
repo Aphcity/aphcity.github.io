@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Minion;
+  src: url("/fonts/Minion Pro Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceHanSans;
+  src: url("/fonts/SourceHanSansCN-VF.ttf") format("truetype");
+}
+
+html {
+  font-family: Minion, SourceHanSans;
+}

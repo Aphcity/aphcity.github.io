@@ -3,7 +3,12 @@ Thumbs.db
 db.json
 *.log
 node_modules/
+build/
 public/
+resources/
+
+.hugo_build.lock
+
 .deploy*/
 _multiconfig.yml
 *.code-workspace

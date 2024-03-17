@@ -1,0 +1,42 @@
+<div style="text-align: center">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid={{ index .Params 0 }}&page={{ if gt (len .Params) 1 }}{{ index .Params 1 }}{{ else }}1{{ end }}&as_wide=1&high_quality=1&autoplay=0"
+    width="100%"
+    height="350"
+    scrolling="no"
+    border="0"
+    frameborder="no"
+    framespacing="0"
+    allowfullscreen="true"
+    style="border-radius: 10px"
+    sandbox="allow-top-navigation allow-same-origin  allow-forms allow-scripts"
+  >
+  </iframe>
+
+  <button
+    id="openUrlButton"
+    style="
+      background-color: #f69;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+    "
+  >
+    Open in Bilibili
+  </button>
+</div>
+<script>
+  // Get the button element
+  var button = document.getElementById("openUrlButton");
+
+  // Add click event listener to the button
+  button.addEventListener("click", function () {
+    // Get the bvid from the URL
+    var bvid = "{{ index .Params 0 }}";
+
+    // Open the URL in a new tab
+    window.open("https://bilibili.com/" + bvid);
+  });
+</script>
