@@ -26,9 +26,9 @@ pageRef = "music"
 weight = 20
 
 [[main]]
-name = "example sub-menu 2"
+name = "Woodenfish"
 parent = "Media"
-pageRef = "posts"
+pageRef = "toolbox/woodenfish"
 weight = 30
 
 [[subnavigation]]

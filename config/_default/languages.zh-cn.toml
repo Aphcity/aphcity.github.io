@@ -4,7 +4,7 @@ weight = 2
 title = "Aphcity の 部落格"
 
 [params]
-  displayName = "简体中文"
+  displayName = "🇨🇳 简体中文"
   isoCode = "zh-CN"
   rtl = false
   dateFormat = "2006年1月2日"

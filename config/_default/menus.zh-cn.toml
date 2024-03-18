@@ -15,20 +15,20 @@ pageRef = "posts"
 weight = 10
 
 [[main]]
-name = "Parent"
+name = "工具盒"
 weight = 20
 
 [[main]]
-name = "example sub-menu 1"
-parent = "Parent"
-pageRef = "posts"
+name = "音乐盒"
+parent = "工具盒"
+pageRef = "music"
 weight = 20
 
 [[main]]
-name = "example sub-menu 2"
-parent = "Parent"
-pageRef = "posts"
-weight = 20
+name = "木鱼"
+parent = "工具盒"
+pageRef = "toolbox/woodenfish"
+weight = 30
 
 [[subnavigation]]
 name = "An interesting topic"
