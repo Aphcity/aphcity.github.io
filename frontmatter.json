@@ -5,18 +5,86 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
+      "title": "Posts",
+      "path": "[[workspace]]/content/",
+      "previewPath": "/{{locale}}/posts/",
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en/posts/"
+        },
+        {
+          "title": "Chinese",
+          "locale": "zh-cn",
+          "path": "zh/posts/"
+        }
+      ]
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "Clash",
-    "Hexo",
-    "Toolbox",
-    "机场"
+  "frontMatter.git.enabled": true,
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "boolean"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
+        }
+      ]
+    }
   ],
-  "frontMatter.taxonomy.categories": [
-    "Toolbox",
-    "教程"
+  "frontMatter.content.i18n": [
+    {
+      "title": "English",
+      "locale": "en",
+      "path": "en"
+    },
+    {
+      "title": "Chinese",
+      "locale": "zh",
+      "path": "zh"
+    }
   ]
 }
