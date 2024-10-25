@@ -24,10 +24,20 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Install toml-cli
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cargo
+          cargo install toml-cli
+
+      - name: Extract max Hugo version
+        id: extract_version
+        run: echo "MAX_VERSION=$(toml get themes/blowfish/config.toml module.hugoVersion.max)" >> $GITHUB_ENV
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: latest
+          hugo-version: ${{ env.MAX_VERSION }}
           extended: true
 
       - name: Build
