@@ -34,6 +34,10 @@ jobs:
         id: extract_version
         run: echo "MAX_VERSION=$(toml get themes/blowfish/config.toml module.hugoVersion.max)" >> $GITHUB_ENV
 
+      - name: Replace double quotes with single quotes in MAX_VERSION
+        run: |
+          sed -i "s/\"/'/g" $GITHUB_ENV
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
