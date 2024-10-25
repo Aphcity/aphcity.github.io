@@ -14,11 +14,14 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
+replyByEmail = false
+
 # mainSections = ["section1", "section2"]
 # robots = ""
 
 disableImageOptimization = false
 disableTextInHeader = false
+# backgroundImageWidth = 1200
 
 defaultBackgroundImage = "img/default-cover.2q5oxoasyv00.webp" # used as default for background images 
 defaultFeaturedImage = "img/default-cover.2q5oxoasyv00.webp" # used as default for featured images in all articles
@@ -26,6 +29,9 @@ defaultFeaturedImage = "img/default-cover.2q5oxoasyv00.webp" # used as default f
 highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
+
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
@@ -55,6 +61,7 @@ smartTOCHideUnfocusedChildren = false
   showDateOnlyInArticle = false
   showDateUpdated = true
   showAuthor = true
+  # showAuthorBottom = false
   showHero = true
   heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -89,6 +96,7 @@ smartTOCHideUnfocusedChildren = false
   showLikes = false
   showTableOfContents = false
   showCards = false
+  orderByWeight = false
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
@@ -130,6 +138,16 @@ smartTOCHideUnfocusedChildren = false
 [fathomAnalytics]
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
+
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # enableTrackEvent = true
+
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
 
 [buymeacoffee]
   # identifier = ""

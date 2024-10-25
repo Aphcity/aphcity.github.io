@@ -1,3 +1,4 @@
+disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
@@ -13,7 +14,7 @@ title = "Aphcity's Blog"
   description = "My awesome website"
   copyright = "Copy, _right?_ :thinking_face:"
 
-[author]
+[params.author]
   name = "Aphcity"
   image = "img/avatar.5esiw34k8aw0.webp"
   headline = "I'm just a average student"
@@ -37,6 +38,7 @@ title = "Aphcity's Blog"
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
 #     { instagram = "https://instagram.com/username" },
+#     { itch-io = "https://username.itch.io" },
 #     { keybase = "https://keybase.io/username" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
@@ -52,6 +54,7 @@ title = "Aphcity's Blog"
 #     { slack = "https://workspace.url/team/userid" },
 #     { snapchat = "https://snapchat.com/add/username" },
 #     { soundcloud = "https://soundcloud.com/username" },
+#     { spotify = "https://open.spotify.com/user/userid" },
 #     { stack-overflow = "https://stackoverflow.com/users/userid/username" },
     { steam = "https://steamcommunity.com/id/Aphcity/" },
 #     { telegram = "https://t.me/username" },
@@ -64,4 +67,5 @@ title = "Aphcity's Blog"
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
+#     { codeberg = "https://codeberg.org/username"},
   ]
