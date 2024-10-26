@@ -9,7 +9,7 @@ categories:
 ---
 
 <head>
-    <link rel="stylesheet" href="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/woodenfish/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/woodenfish/style.min.css">
     <script src = "https://kit.fontawesome.com/a7b16cfbd0.js" crossorigin="anonymous"></script>
     <script src = "https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
@@ -32,4 +32,4 @@ categories:
         </div>
     </div>
 </body>
-<script src="https://jsd.cdn.zzko.cn/gh/Aphcity/aphcity-assets@master/woodenfish/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/woodenfish/main.min.js"></script>
