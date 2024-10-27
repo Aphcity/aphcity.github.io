@@ -1,15 +1,15 @@
 ---
 title: Hexo + Butterfly 博客搭建日记
 katex: true
-cover: >-
-  https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
+featureimage: https://cdn.statically.io/gh/Aphcity/aphcity-assets@master/20230209/Hexo-Butterfly-博客搭建日记.22p2gpwqav1c.webp
 categories:
-  - 教程
+   - 教程
 tags:
-  - Hexo
-abbrlink: aef5367a
-date: 2022-12-30 10:44:25
-updated: 2023-06-21 22:46:37
+   - Hexo
+date: 2022-12-30T10:44:00.000Z
+lastmod: 2024-10-27T16:09:58.559Z
+draft: false
+description: 在 GitHub 上配置使用 Butterfly 主题的 Hexo 博客的完整指南，从安装到部署。
 ---
 
 > 全记录，旨在能够找到回家的路。
@@ -38,16 +38,16 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 此处为全局配置，所以可以在任意位置打开`git bash`，设置用户名称和邮件地址。
 
 ``` bash
-git config --global user.name "Aphcity"  
-git config --global user.email "chalk.talisman@gmail.com"
+git config --global user.name "<yourusername>"  
+git config --global user.email "<youremail>"
 ```
 
 设置完成后为了能够在本地使用`git`管理`github`上的项目，需要绑定`SSHkey`。
 
 ``` bash
-ssh-keygen -t rsa -C chalk.talisman@gmail.com  
+ssh-keygen -t rsa -C <youremail>
 # -C后面加你在github的用户名邮箱，这样公钥才会被github认可  
-less ~/.ssh/id_rsa.pub  
+less ~/.ssh/id_rsa.pub
 # 查看公钥内容稍后加入Github账户的sshkey中,
 ```
 

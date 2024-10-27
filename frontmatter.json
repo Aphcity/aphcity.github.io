@@ -48,8 +48,8 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
+          "title": "External URL for feature image",
+          "name": "featureimage",
           "type": "image"
         },
         {
@@ -71,6 +71,11 @@
           "title": "lastmod",
           "name": "lastmod",
           "type": "datetime"
+        },
+        {
+          "title": "katex",
+          "name": "katex",
+          "type": "boolean"
         }
       ]
     }
