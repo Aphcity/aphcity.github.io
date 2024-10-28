@@ -11,30 +11,31 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-name = "Blog"
+name    = "Blog"
 pageRef = "posts"
-weight = 10
+weight  = 10
 
 [[main]]
-name = "Media"
+name   = "Media"
 weight = 20
 
 [[main]]
-name = "Music"
-parent = "Media"
+name    = "Music"
+parent  = "Media"
 pageRef = "music"
-weight = 20
+weight  = 20
 
 [[main]]
-name = "Woodenfish"
-parent = "Media"
+name    = "Woodenfish"
+parent  = "Media"
 pageRef = "toolbox/woodenfish"
-weight = 30
+weight  = 30
 
 [[subnavigation]]
-name = "An interesting topic"
-pageRef = "tags/interesting-topic"
-weight = 10
+pre = "graduation-cap"
+name    = "Resume"
+pageRef = "resume"
+weight  = 10
 
 # [[subnavigation]]
 # name = "My Awesome Category"
@@ -43,14 +44,14 @@ weight = 10
 # weight = 20
 
 [[main]]
-name = "Categories"
+name    = "Categories"
 pageRef = "categories"
-weight = 20
+weight  = 20
 
 [[main]]
-name = "Tags"
+name    = "Tags"
 pageRef = "tags"
-weight = 30
+weight  = 30
 
 
 # -- Footer Menu --
@@ -59,11 +60,11 @@ weight = 30
 
 
 [[footer]]
-name = "Tags"
+name    = "Tags"
 pageRef = "tags"
-weight = 10
+weight  = 10
 
 [[footer]]
-name = "Categories"
+name    = "Categories"
 pageRef = "categories"
-weight = 20
+weight  = 20
