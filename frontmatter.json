@@ -32,6 +32,8 @@
       "fields": [
         {
           "title": "Title",
+          "description": "The title of the post",
+          "required": true,
           "name": "title",
           "type": "string"
         },
@@ -41,15 +43,32 @@
           "type": "string"
         },
         {
+          "title": "Summary",
+          "name": "summary",
+          "required": true,
+          "type": "string"
+        },
+        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
+          "required": true,
           "default": "{{now}}",
           "isPublishDate": true
         },
         {
-          "title": "External URL for feature image",
+          "title": "Modified Date",
+          "isModifiedDate": true,
+          "name": "lastmod",
+          "required": true,
+          "default": "{{now}}",
+          "type": "datetime"
+        },
+        {
+          "title": "featureimage",
+          "description": "The feature image of the post",
           "name": "featureimage",
+          "isPreviewImage": true,
           "type": "image"
         },
         {
@@ -68,19 +87,15 @@
           "type": "categories"
         },
         {
-          "title": "lastmod",
-          "name": "lastmod",
-          "type": "datetime"
-        },
-        {
-          "title": "katex",
-          "name": "katex",
-          "type": "boolean"
-        },
-        {
           "title": "showTableOfContents",
           "name": "showTableOfContents",
           "type": "boolean"
+        },
+        {
+          "title": "layout",
+          "description": "The layout of the post",
+          "name": "layout",
+          "type": "string"
         }
       ]
     }

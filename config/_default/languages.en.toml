@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Aphcity's Blog"
+title = "Aphcity's Mind City"
 
 [params]
   displayName = "🇺🇸 English"
@@ -17,8 +17,8 @@ title = "Aphcity's Blog"
 [params.author]
   name = "Aphcity"
   image = "img/avatar.5esiw34k8aw0.webp"
-  headline = "I'm just a average student"
-  bio = "I'm just a average student"
+  headline = "I'm just an average student, and I do forget things"
+  bio = "I'm just an average student, and I do forget things"
   links = [
     { email = "mailto:chalk.talisman@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },

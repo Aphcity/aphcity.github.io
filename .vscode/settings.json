@@ -1,4 +1,9 @@
 {
     "[markdown]": {
+    },
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+        "file": ".github/commit-instructions.md"
     }
+    ]
 }
