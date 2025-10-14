@@ -20,7 +20,7 @@ jobs:
           ref: main #2020年10月后github新建仓库默认分支改为main，注意更改
 
       - name: 安装 Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "18.x" #action使用的node版本，建议大版本和本地保持一致。可以在本地用node -v查询版本号。
 
