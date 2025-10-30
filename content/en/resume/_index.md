@@ -8,7 +8,7 @@ layout: "simple"
 ---
 
 <div class="max-w-full w-screen">
-{{< pdf fileName="resume" url="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/resume.pdf" type="IN_LINE" >}}
+{{< pdf fileName="resume" url="https://cdn.jsdelivr.net/gh/Aphcity/Aphcity@main/resume.pdf" type="IN_LINE" >}}
 </div>
 <body>
 <script type="text/javascript" src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
