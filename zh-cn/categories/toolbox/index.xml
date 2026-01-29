@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Toolbox on Aphcity の 部落格</title><link>https://aphcity.top/zh-cn/categories/toolbox/</link><description>Recent content in Toolbox on Aphcity の 部落格</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Copy, _right?_ :thinking_face:</copyright><lastBuildDate>Mon, 18 Mar 2024 10:37:28 +0000</lastBuildDate><atom:link href="https://aphcity.top/zh-cn/categories/toolbox/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://aphcity.top/zh-cn/toolbox/woodenfish/</link><pubDate>Mon, 18 Mar 2024 10:37:28 +0000</pubDate><guid>https://aphcity.top/zh-cn/toolbox/woodenfish/</guid><description>&lt;head&gt;
+ &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/woodenfish/style.min.css"&gt;
+ &lt;script src = "https://kit.fontawesome.com/a7b16cfbd0.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+ &lt;script src = "https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class="centerContent"&gt;
+ &lt;div id="top"&gt;
+ &lt;div class="score"&gt;
+ &lt;div class="count"&gt;0&lt;/div&gt;
+ &lt;div class="subtitle"&gt; 功德&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div id="center"&gt;
+ &lt;svg class="woodenfish" viewBox="0 0 1365 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266.6015625" height="200"&gt;&lt;path fill="#eeeeee" opacity="1.00" d="M1.450653 780.39695c-10.175905 64.255398 36.031662 101.161718 59.626108 112.361614 23.594445 11.178562 63.274073 0 78.825927 0 116.542907 11.178562 366.759228 131.220103 678.606972 131.220103 0 0 504.635269 7.445264 543.31224-360.487287 9.19458-95.529771 4.885288-277.458732-71.039334-286.162651-63.956734-8.426588-102.121709 4.074628-183.315615 20.565141-53.908828 10.922564-189.011561 29.973052-212.926004 44.970245-260.989553 118.718887-403.324219 204.371417-442.299853 217.128631-29.439724 0-54.975485-7.359931-62.100752-69.972677 0-25.706426 98.089747-87.039184 140.137353-96.959091C682.660267 452.869354 796.365867 435.333519 809.720409 435.333519c19.263819 0 441.489194-101.588381 454.438406-111.188291 12.949212-9.59991 26.62375-18.986489 26.623751-52.543508 0-15.359856-33.813016-49.663534-72.319322-91.455142-45.674238-49.556869-99.94573-107.092329-140.606682-120.788201C1002.934597 20.958737 856.077308-10.912964 727.779844 3.572233 446.929143 35.273269 271.677453 342.662388 256.424263 363.995521c-64.852725 90.708483-116.542907 205.587406-143.678653 256.296264C86.548522 669.272659 11.71189 735.149375 1.450653 780.39695z" p-id="2023"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;div id="bottom"&gt;
+ &lt;div class="keyTips"&gt;
+ 按下&lt;key&gt;Space&lt;/key&gt;或&lt;key&gt;点击&lt;/key&gt;积攒功德
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/body&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/Aphcity/aphcity-assets@master/woodenfish/main.min.js"&gt;&lt;/script&gt;</description></item></channel></rss>
